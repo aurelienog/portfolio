@@ -1,10 +1,13 @@
 const express = require('express');
 const logger = require('morgan');
 const createError = require('http-errors');
+import helmet from "helmet";
 
 const app = express();
 
+app.use(helmet());
 app.use(logger('dev'));
+
 
 
 app.use((req, res, next) => next(createError(404, 'Route not found')));
