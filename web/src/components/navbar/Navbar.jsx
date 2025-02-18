@@ -4,16 +4,16 @@ import PageLayout from '../layout/PageLayout'
 
 function Navbar() {
   return (
-    <PageLayout>
-      <nav className='fixed bg-white top-0 z-50 h-[var(--header-height)] grid items-center grid-cols-[auto_2fr] lg:grid-cols-[2fr_4fr] gap-18 md:w-[90%] md:mx-auto'>
-        <div className=''><Link to="/">Aurélie</Link></div>
-        <ul className='flex justify-evenly'>
-          <li><Link to="/about">Acerca de mi</Link></li>
-          <li><Link to="/about">Mis proyectos</Link></li>
-          <li><Link to="/about">contactame</Link></li>
-        </ul>
+
+      <nav className='sticky top-0  md:w-[90%] bg-background z-50 h-[var(--header-height)] grid items-center grid-cols-[auto_2fr] lg:grid-cols-[2fr_4fr] gap-16 md:mx-auto'>
+        <div className='font-bold'><Link to="/">Aurélie Nogueira</Link></div>
+        <ol className='flex justify-evenly'>
+          <li className='font-bold font-bebas-neue text-2xl hover:underline underline-offset-4 decoration-4 uppercase'><Link to="/about">01_ Sobre Mí</Link></li>
+          <li className='font-bold font-bebas-neue text-2xl hover:underline underline-offset-4 decoration-4 uppercase'><Link to="/about">02_ Mis proyectos</Link></li>
+          <li className='font-bold font-bebas-neue text-2xl hover:underline underline-offset-4 decoration-4 uppercase'><Link to="/about">03_ Contáctame</Link></li>
+        </ol>
       </nav>
-    </PageLayout>
+
     
   )
 }
