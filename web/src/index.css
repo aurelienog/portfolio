@@ -11,6 +11,7 @@
 
   --font-montserrat: "Montserrat", serif;
   --font-bebas-neue: "Bebas Neue", serif;
+
 }
 
 @layer base {
@@ -22,3 +23,4 @@
   }
 
 }
+
