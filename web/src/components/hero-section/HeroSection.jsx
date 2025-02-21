@@ -13,8 +13,8 @@ function HeroSection() {
       </figure>
       <div className='mt-8'>
         <h1 className='text-5xl md:text-9xl font-bold'>Hola ! Soy Aurélie </h1>
-        <p className='mt-8 mb-20 leading-normal text-xl'>Desarrolladora Full Stack con mentalidad analítica y resolutiva. Busco mi primera oportunidad laboral para crear soluciones con JavaScript en un entorno dinámico y desafiante.</p>
-        <Button>Contratame</Button>
+        <p className='mt-8 mb-20 leading-normal text-xl'>Desarrolladora Full Stack con mentalidad analítica y resolutiva. Busco mi primera oportunidad laboral en Valencia para crear soluciones con JavaScript en un entorno dinámico y desafiante.</p>
+        <Button>Contáctame</Button>
       </div>
     </section>
     
