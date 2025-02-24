@@ -16,6 +16,7 @@ function HomePage() {
         <ProjectsSection/>
         <ContactSection/>
       </PageLayout>
+      
     </div>
   
     

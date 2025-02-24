@@ -18,7 +18,7 @@
 @keyframes show {
   from {
     opacity: 0;
-    scale: 25%;
+    scale: 0%;
   }
 
   to {
@@ -66,17 +66,12 @@
     animation-timeline: --image;
     animation-name: show;
     animation-fill-mode: both;
-    animation-range: entry 25% cover 30%;
+    animation-range: entry 35% cover 35%;
   }
 
-  .animate-splash {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-    
-  }
 
   .animate-splash > * {
-    animation-timeline: --image;
+    animation-timeline: view(block);
     animation-name: splash;
     animation-fill-mode: both;
     animation-duration: 0.6s;
