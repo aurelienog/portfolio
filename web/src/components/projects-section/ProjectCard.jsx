@@ -23,7 +23,7 @@ function ProjectCard({name, architecture, description, image, order, technologie
       </article>
       <figure className={`${order === 'last' ? 'md:order-last' : 'md:order-first'} relative`}>
         <img src={mac} alt="" className='py-4'/>
-        <img src={image} alt={`captura de pantalla del proyecto ${name}`} className='top-10 p-6 absolute animate-show rounded-2xl'/>
+        <img src={image} alt={`captura de pantalla del proyecto ${name}`} className='top-8 p-6 absolute animate-show rounded-2xl'/>
       </figure>
     </div>
     
