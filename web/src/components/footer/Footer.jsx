@@ -1,6 +1,6 @@
 import React from 'react'
-import Github from '../../assets/Github.svg?react';
-import LinkedIn from '../../assets/linkedin.svg?react';
+import Github from '../../assets/github.svg';
+import LinkedIn from '../../assets/linkedin.svg';
 import NeonIcon from '../neon-icon/NeonIcon';
 
 function Footer() {
