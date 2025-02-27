@@ -10,7 +10,7 @@ function App() {
     <div className=" bg-background [--header-height:6rem]">
       <Navbar/>
       <Routes>
-        <Route path="/home?" element={<HomePage/>}/>
+        <Route path="/home" element={<HomePage/>}/>
         <Route path="/about" element={<AboutPage/>}/>
       </Routes>
       <Footer/>
