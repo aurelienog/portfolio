@@ -5,13 +5,13 @@ import Button from '../button/Button'
 
 function ProjectCard({name, architecture, description, image, order, technologies}) {
   return (
-    <div className='md:py-10 md:grid grid-cols-2 md:gap-8'>
+    <div className='py-10 md:grid grid-cols-2 md:gap-18'>
       
       <article className='space-y-4 py-8'>
         <div>
           <h3>{name}<br></br></h3>
           <h4>{architecture}</h4>
-          <figure className={`md:hidden ${order === 'last' ? 'md:order-last' : 'md:order-first'} relative`}>
+          <figure className={`md:hidden ${order === 'last' ? 'md:order-last' : 'md:order-first'} mt-4 relative`}>
             <img src={mac} alt="" className='py-4'/>
             <img src={image} alt={`captura de pantalla del proyecto ${name}`} className='top-6 p-2 absolute animate-show'/>
           </figure>          
