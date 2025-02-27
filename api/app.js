@@ -7,6 +7,9 @@ const helmet = require('helmet');
 
 const app = express();
 
+const cors = require('./config/cors.config');
+app.use(cors);
+
 app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
@@ -29,6 +32,4 @@ app.use((req, res, next) => {
 
 const port = 3000;
 app.listen(port, () => console.info(`App is running at port ${port}`))
-
-
 
