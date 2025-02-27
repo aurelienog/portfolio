@@ -5,9 +5,9 @@ import Send from '../../assets/send.svg?react';
 function ContactSection() {
   return (
     <section className='relative'>
-      <h2 className='md:text-6xl'>Trabajamos juntos?</h2>
-      <p className='md:text-xl flex gap-2 font-bold mb-8'>Estoy a un mensaje de distancia <Send/></p>
-      <div className='w-[50%]'>
+      <h2>Trabajamos juntos?</h2>
+      <p className='flex gap-2 font-bold mb-8 items-baseline'>Estoy a un mensaje de distancia <Send className="relative top-1"/></p>
+      <div className='md:w-[50%]'>
         <ContactForm/>
       </div>
       
