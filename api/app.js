@@ -19,6 +19,11 @@ app.use((req, res, next) => {
 
 
 app.use(helmet());
+app.use(helmet({
+  contentSecurityPolicy: false,  // Esto evita que CSP bloquee las solicitudes CORS
+  crossOriginResourcePolicy: { policy: "cross-origin" } // Permite compartir recursos entre orígenes
+}));
+
 app.use(logger('dev'));
 app.use(express.json());
 
