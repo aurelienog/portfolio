@@ -60,7 +60,7 @@
   }
 
   h2 {
-    @apply text-5xl uppercase;
+    @apply text-5xl md:text-6xl uppercase;
   }
 
   h3 {
