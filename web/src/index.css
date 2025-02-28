@@ -56,7 +56,7 @@
   }
 
   h1 {
-    @apply text-9xl uppercase; 
+    @apply text-7xl md:text-9xl uppercase; 
   }
 
   h2 {

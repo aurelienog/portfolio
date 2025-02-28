@@ -5,7 +5,7 @@ import Button from '../button/Button'
 
 function ProjectCard({name, architecture, description, image, order, technologies}) {
   return (
-    <div className='py-10 md:grid grid-cols-2 md:gap-18'>
+    <div className='py-6 md:py-10 md:grid grid-cols-2 md:gap-18'>
       
       <article className='space-y-4 py-8'>
         <div>
