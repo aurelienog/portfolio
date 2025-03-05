@@ -12,7 +12,7 @@ function ContactForm() {
       setServerError();
       const newMessage = await service.sendMessage(message);
       reset();
-      setSuccessMessage("¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.");
+      setSuccessMessage("Gracias por ponerte en contacto conmigo. He recibido tu mensaje y lo revisaré lo antes posible!");
     } catch(error) {
       const errors = error.response?.data.errors;
       if (errors) {
@@ -31,7 +31,7 @@ function ContactForm() {
       <div className='mb-8'>
 
         {serverError && <div className="border font-medium rounded-2xl w-full p-4 text-red-600 mt-10">{serverError}</div>}
-        {successMessage && <div className="border font-medium rounded-2xl w-full p-4 text-green-600 mt-4">{successMessage}</div>}
+        {successMessage && <div className="border font-medium rounded-2xl w-full p-4 text-green-600 my-4">{successMessage}</div>}
 
         {/*NAME*/}
         <div className='flex flex-col h-32'>

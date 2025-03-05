@@ -7,6 +7,6 @@ module.exports.home = ((req, res, next) => {
 
 module.exports.mailer = ((req, res, next) => {
   console.log(req.body)
-  mailer.sendMail(req.body.message);
+  mailer.sendMail(req.body);
   res.status(200).send();
 })

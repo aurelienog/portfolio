@@ -8,14 +8,14 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-module.exports.sendMail = (message) => {
+module.exports.sendMail = (form) => {
   transporter
     .sendMail({
       from:`Aurelie <${process.env.EMAIL_FROM}>`,
       to:`${process.env.EMAIL_TO}`,
       subject:"New mail from portfolio",
       text:"test",
-      html: `<h1>Test</h1><p>${message}</p>`
+      html: `<h1>From: ${form.name}, ${form.email}</h1><p>${form.message}</p>`
     })
     .then((info) => console.log(info))
     .catch((error) => console.log(error)); 
