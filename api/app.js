@@ -13,6 +13,11 @@ app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
 
+//TO DELETE, deploy test
+app.get("/", (req, res) => {
+  res.json("Holi")
+});
+
 const api = require('./config/routes.config');
 app.use("/api/v1", api)
 app.use((req, res, next) => next(createError(404, 'Route not found')));
