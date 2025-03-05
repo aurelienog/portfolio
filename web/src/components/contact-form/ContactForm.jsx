@@ -3,13 +3,16 @@ import { useForm} from 'react-hook-form'
 import service from '../../services/common';
 
 function ContactForm() {
-  const { register, handleSubmit, formState: { errors, isValid } } = useForm({mode: 'onChange'});
+  const { register, handleSubmit, reset, formState: { errors, isValid } } = useForm({mode: 'onChange'});
   const [serverError, setServerError] = useState();
+  const [successMessage, setSuccessMessage] = useState();
 
   const onMessageSubmit = async (message) => {
     try {
       setServerError();
       const newMessage = await service.sendMessage(message);
+      reset();
+      setSuccessMessage("¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.");
     } catch(error) {
       const errors = error.response?.data.errors;
       if (errors) {
@@ -28,6 +31,7 @@ function ContactForm() {
       <div className='mb-8'>
 
         {serverError && <div className="border font-medium rounded-2xl w-full p-4 text-red-600 mt-10">{serverError}</div>}
+        {successMessage && <div className="border font-medium rounded-2xl w-full p-4 text-green-600 mt-4">{successMessage}</div>}
 
         {/*NAME*/}
         <div className='flex flex-col h-32'>
