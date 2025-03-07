@@ -7,7 +7,7 @@ import Footer from "./components/footer/Footer"
 function App() {
 
   return (
-    <div className=" bg-background [--header-height:6rem]">
+    <div className=" bg-background [--header-height:6rem] max-w-full">
       <Navbar/>
       <Routes>
         <Route path="/home?" element={<HomePage/>}/>

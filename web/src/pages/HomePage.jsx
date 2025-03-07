@@ -9,7 +9,7 @@ import ProjectsSection from '../components/projects-section/ProjectsSection'
 
 function HomePage() {
   return (
-    <div>
+    <>
       <PageLayout>
         <HeroSection />
         <AboutSection/>
@@ -17,7 +17,7 @@ function HomePage() {
         <ContactSection/>
       </PageLayout>
       
-    </div>
+    </>
   
     
   )
