@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import MenuIcon from "../../assets/menu.svg?react"
+import MenuIcon from "../../assets/icons/menu.svg?react"
 
 function Navbar() {
   return (

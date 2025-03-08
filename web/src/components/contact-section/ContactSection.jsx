@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactForm from '../contact-form/ContactForm'
-import Send from '../../assets/send.svg?react';
+import Send from '../../assets/icons/send.svg?react';
 
 function ContactSection() {
   return (
