@@ -3,7 +3,7 @@ import { useForm} from 'react-hook-form'
 import service from '../../services/common';
 
 function ContactForm() {
-  const { register, handleSubmit, reset, formState: { errors, isValid } } = useForm({mode: 'onChange'});
+  const { register, handleSubmit, reset, formState: { errors, isValid, isSubmitting } } = useForm({mode: 'onChange'});
   const [serverError, setServerError] = useState();
   const [successMessage, setSuccessMessage] = useState();
 
@@ -60,7 +60,7 @@ function ContactForm() {
         {/*Message*/}
         <div className='flex flex-col min-h-52'>
           <label htmlFor='message' className='cursor-pointer font-bold p-2'><span className='text-red-600 font-medium'>*</span>Mensaje :</label>
-          <textarea id='message' placeholder="Escriba su mensaje aquí..." className={`peer field-sizing-content cursor-pointer border h-32 rounded-2xl p-2 outline-none hover:border-2 focus:border-2 border-black focus:font-bold  focus:bg-green-200/10 ${errors.message ? 'not-focus:border-red-600 not-focus:border-2 not-focus:bg-red-200' : ''}` } {...register("message", { 
+          <textarea id='message' placeholder="Escriba su mensaje aquí..." className={`peer cursor-pointer border h-32 rounded-2xl p-2 outline-none hover:border-2 focus:border-2 border-black focus:font-bold  focus:bg-green-200/10 ${errors.message ? 'not-focus:border-red-600 not-focus:border-2 not-focus:bg-red-200' : ''}` } {...register("message", { 
             required: "Por favor, ingrese su mensaje.", 
             minLength: { value: 150, message: 'El mensaje debe tener al menos 150 caracteres.' },
             maxLength: { value: 5000, message: 'El mensaje debe tener máximo 5000 caracteres.'} 
@@ -69,7 +69,7 @@ function ContactForm() {
         </div>
 
         <div className='mt-8'>
-          <button type='submit' className={`w-full cursor-pointer bg-[#e10505]/90 uppercase outline-2 font-bold text-white/90 rounded-2xl px-8 py-4 ${!isValid ? 'opacity-30 pointer-events-none' : ''} shadow-2xl`}>Enviar mensaje</button>
+          <button type='submit' className={`w-full cursor-pointer bg-[#e10505]/90 uppercase outline-2 font-bold text-white/90 rounded-2xl px-8 py-4 ${!isValid || isSubmitting ? 'opacity-30 pointer-events-none' : ''} shadow-2xl`}>{isSubmitting ? 'Enviando...' : 'Enviar mensaje'}</button>
         </div>
         
       </div>     
