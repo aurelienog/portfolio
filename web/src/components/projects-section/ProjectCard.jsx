@@ -1,6 +1,6 @@
 import React from 'react'
 import SplashIcon from '../splash-icon/SplashIcon'
-import mac from '../../assets/mac.png';
+import mac from '../../assets/images/mac.webp';
 import Button from '../button/Button'
 
 function ProjectCard({name, architecture, description, image, order, technologies}) {

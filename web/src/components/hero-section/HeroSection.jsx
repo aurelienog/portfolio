@@ -1,6 +1,6 @@
 import React from 'react'
 import SplashBackground from '../splash-background/SplashBackground'
-import meImg from '../../assets/me-transp.png';
+import meImg from '../../assets/images/me-hero.webp';
 import Button from '../button/Button';
 import extraSplash from '../../assets/extraSplash.png';
 

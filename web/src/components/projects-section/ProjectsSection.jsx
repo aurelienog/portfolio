@@ -1,8 +1,8 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import shelterExpress from '../../assets/shelterExpress.png';
-import reactShelter from '../../assets/reactShelter.png';
-import grimm from '../../assets/grimm.jpg';
+import shelterExpress from '../../assets/images/shelterExpress.webp';
+import reactShelter from '../../assets/images/reactShelter.webp';
+import grimm from '../../assets/images/grimm.webp';
 import express from '../../assets/express.svg';
 import hbs from '../../assets/hbs.svg';
 import html from '../../assets/html.svg';
@@ -12,12 +12,12 @@ import mongodb from '../../assets/mongodb.svg';
 import nodejs from '../../assets/nodejs.svg';
 import react from '../../assets/react.svg';
 import tailwind from '../../assets/tailwind.svg';
-import redSplash from '../../assets/redSplash.png';
-import orangeSplash from '../../assets/orangeSplash.png';
-import greenSplash from '../../assets/greenSplash.png';
-import pinkSplash from '../../assets/pinkSplash.png';
-import blueSplash from '../../assets/blueSplash.png';
-import yellowSplash from '../../assets/yellowSplash.png';
+import redSplash from '../../assets/images/redSplash.webp';
+import orangeSplash from '../../assets/images/orangeSplash.webp';
+import greenSplash from '../../assets/images/greenSplash.webp';
+import pinkSplash from '../../assets/images/pinkSplash.webp';
+import blueSplash from '../../assets/images/blueSplash.webp';
+import yellowSplash from '../../assets/images/yellowSplash.webp';
 
 function ProjectsSection() {
   return (

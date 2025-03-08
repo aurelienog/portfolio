@@ -90,11 +90,13 @@
     animation-name: show;
     animation-fill-mode: both;
     animation-range: entry 35% cover 35%;
+    contain: layout paint;
   }
 
 
   .animate-splash > * {
     animation-timeline: view();
+    contain: layout paint;
     animation-name: splash;
     animation-fill-mode: both;
     animation-duration: 0.6s;
