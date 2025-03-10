@@ -15,7 +15,6 @@
   --animate-show : show linear both;
   --animate-splash : splash 0.6s cubic-bezier(0.25, 1, 0.7, 1) both;
 
-
 @keyframes show {
   from {
     opacity: 0;
@@ -83,6 +82,7 @@
 }
 
 @layer utilities {
+
   .animate-show {
     view-timeline-name: --image;
     view-timeline-axis: block;
@@ -91,11 +91,12 @@
     animation-fill-mode: both;
     animation-range: entry 35% cover 35%;
     contain: layout paint;
+    animation-duration: 1ms;
   }
 
 
   .animate-splash > * {
-    animation-timeline: view();
+    animation-timeline: view(y);
     contain: layout paint;
     animation-name: splash;
     animation-fill-mode: both;
