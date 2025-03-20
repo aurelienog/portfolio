@@ -10,7 +10,7 @@ function HeroSection() {
     <section className='lg:grid grid-cols-2 gap-16 pt-6 px-8 items-center'>
       <figure className='md:order-1 mb-14 md:mb-0 relative'>
         <SplashBackground image={meImg}/>
-        <img src={extraSplash} className='hidden md:block absolute w-32 -bottom-48 right-12 starting:opacity-0 transition-opacity delay-600 duration-700 ease-in-out opacity-100 [aria-hidden:"true"]'/>
+        <img src={extraSplash} alt="" className='hidden md:block absolute w-32 -bottom-48 right-12 starting:opacity-0 transition-opacity delay-600 duration-700 ease-in-out opacity-100 [aria-hidden:"true"]'/>
       </figure>
       <div className='mt-8'>
         <h1 className='font-bold'>Hola ! Soy Aurélie </h1>

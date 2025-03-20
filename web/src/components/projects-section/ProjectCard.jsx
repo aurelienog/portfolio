@@ -21,7 +21,7 @@ function ProjectCard({name, architecture, description, image, order, technologie
 
         <div className='grid grid-cols-3 justify-items-center items-center md:flex animate-splash mb-12 w-full'>
         {technologies && technologies.map((tech, indice) => (
-          <SplashIcon key={indice} icon={tech.tech} splash={tech.splash}/>
+          <SplashIcon key={indice} icon={tech.tech} splash={tech.splash} name={tech.name}/>
         ))}         
         </div>
         <Button>Más info</Button>
