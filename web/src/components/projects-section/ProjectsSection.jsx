@@ -22,7 +22,7 @@ import yellowSplash from '../../assets/images/yellowSplash.webp';
 function ProjectsSection() {
   return (
     <section className='px-8 mx-auto'>
-      <h2 className='md:mb-8 mt-8'>Mis ultimos proyectos</h2>
+      <h2 className='lg:mb-8 mt-8'>Mis ultimos proyectos</h2>
       <ProjectCard 
         name = "Página de Adopción de Mascotas"
         architecture="SPA con React"

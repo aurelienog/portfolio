@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function AboutSection() {
   return (
-    <section className='bg-black rounded-4xl text-white/90 px-8 md:grid grid-cols-[auto_1fr] items-center'>
+    <section className='bg-black rounded-4xl text-white/90 px-8 lg:grid grid-cols-[auto_1fr] items-center'>
       <figure className='p-10 h-96 [aria-hidden:"true"] hidden md:block'>
         <img src={iaImg} alt="" className='h-full object-cover'/>
       </figure>

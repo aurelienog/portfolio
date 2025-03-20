@@ -8,7 +8,9 @@ function App() {
 
   return (
     <div className=" bg-background [--header-height:6rem] ">
-      <Navbar/>
+      <header>
+        <Navbar/>
+      </header>
       <Routes>
         <Route path="/home?" element={<HomePage/>}/>
         <Route path="/about" element={<AboutPage/>}/>

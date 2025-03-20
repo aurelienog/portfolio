@@ -9,15 +9,14 @@ import ProjectsSection from '../components/projects-section/ProjectsSection'
 
 function HomePage() {
   return (
-    <>
+    <main>
       <PageLayout>
         <HeroSection />
         <AboutSection/>
         <ProjectsSection/>
         <ContactSection/>
       </PageLayout>
-      
-    </>
+    </main>
   
     
   )

@@ -69,7 +69,7 @@ function ContactForm() {
         </div>
 
         <div className='mt-8'>
-          <button type='submit' className={`w-full cursor-pointer bg-[#e10505]/90 uppercase outline-2 font-bold text-white/90 rounded-2xl px-8 py-4 ${!isValid || isSubmitting ? 'opacity-30 pointer-events-none' : ''} shadow-2xl`}>{isSubmitting ? 'Enviando...' : 'Enviar mensaje'}</button>
+          <button type='submit' className={`w-full cursor-pointer bg-[#e10505]/90 uppercase outline-2 font-bold text-white rounded-2xl px-8 py-4 ${!isValid || isSubmitting ? 'opacity-30 pointer-events-none' : ''} shadow-2xl`}>{isSubmitting ? 'Enviando...' : 'Enviar mensaje'}</button>
         </div>
         
       </div>     

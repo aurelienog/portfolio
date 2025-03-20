@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=fallback');
+@import "tailwindcss";
 
 @theme{
 
@@ -10,7 +11,7 @@
   --color-accent: #f9436e;
 
   --font-montserrat: "Montserrat", serif;
-  --font-sans: "Bebas Neue", "Oswald", "Anton", impact;
+  --font-sans: "Bebas Neue", "Oswald", "Anton", "impact";
 
   --animate-show : show linear both;
   --animate-splash : splash 0.6s cubic-bezier(0.25, 1, 0.7, 1) both;
