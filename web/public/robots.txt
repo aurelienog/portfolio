@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://aurelie-nogueira.vercel.app/
