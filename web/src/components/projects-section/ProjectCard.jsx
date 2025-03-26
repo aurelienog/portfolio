@@ -28,7 +28,7 @@ function ProjectCard({name, architecture, description, image, order, technologie
       </article>
       <figure className={`hidden md:block ${order === 'last' ? 'md:order-last' : 'md:order-first'} relative`}>
         <img src={mac} alt="" className='py-4'/>
-        <img src={image} alt={`captura de pantalla del proyecto ${name}`} className='top-8 p-6 absolute animate-show'/>
+        <img src={image} alt={`captura de pantalla del proyecto ${name}`} className='top-8 p-6 absolute animate-show opacity-0'/>
       </figure>
     </div>
     

@@ -13,8 +13,8 @@
   --font-montserrat: "Montserrat", serif;
   --font-sans: "Bebas Neue", "Oswald", "Anton", "impact";
 
-  --animate-show : show linear both;
-  --animate-splash : splash 0.6s cubic-bezier(0.25, 1, 0.7, 1) both;
+  --animate-show : show;
+  --animate-splash : splash;
 
 @keyframes show {
   from {
@@ -71,8 +71,14 @@
     @apply text-2xl uppercase;
   }
 
+  html {
+    
+  }
+
   body {
     @apply font-montserrat;
+    @apply overflow-x-hidden;
+    @apply overscroll-none;
   }
 
   p {
@@ -89,10 +95,11 @@
     view-timeline-axis: block;
     animation-timeline: --image;
     animation-name: show;
-    animation-fill-mode: both;
-    animation-range: entry 35% cover 35%;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-range: entry 20% cover 35%;
     contain: layout paint;
-    animation-duration: 1ms;
+
   }
 
 
