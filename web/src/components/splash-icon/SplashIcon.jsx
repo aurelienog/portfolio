@@ -1,5 +1,3 @@
-import React from 'react'
-
 function SplashIcon({icon, splash, name}) {
 
   return (

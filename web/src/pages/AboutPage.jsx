@@ -1,6 +1,5 @@
-import React from 'react'
 import meImg from '../assets/images/meOffice.webp';
-import PageLayout from '../components/layout/PageLayout'
+import PageLayout from '../components/layout/PageLayout';
 
 function AboutPage() {
   return (

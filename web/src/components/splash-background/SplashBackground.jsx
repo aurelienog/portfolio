@@ -1,4 +1,3 @@
-import React from 'react'
 import splash from '../../assets/images/splash.webp';
 import splash2 from '../../assets/images/splash2.webp';
 
