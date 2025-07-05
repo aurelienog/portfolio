@@ -1,16 +1,16 @@
-import React, { useState } from 'react'
-import { useForm} from 'react-hook-form'
+import { useForm} from 'react-hook-form';
 import service from '../../services/common';
+import { useState } from 'react';
 
 function ContactForm() {
-  const { register, handleSubmit, reset, formState: { errors, isValid, isSubmitting } } = useForm({mode: 'onChange'});
+  const { register, handleSubmit, reset,setError, formState: { errors, isValid, isSubmitting } } = useForm({mode: 'onChange'});
   const [serverError, setServerError] = useState();
   const [successMessage, setSuccessMessage] = useState();
 
   const onMessageSubmit = async (message) => {
     try {
       setServerError();
-      const newMessage = await service.sendMessage(message);
+      await service.sendMessage(message);
       reset();
       setSuccessMessage("Gracias por ponerte en contacto conmigo. He recibido tu mensaje y lo revisaré lo antes posible!");
     } catch(error) {

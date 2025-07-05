@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import iaImg from '../../assets/ia.jpg';
 import { Link } from "react-router-dom";
 

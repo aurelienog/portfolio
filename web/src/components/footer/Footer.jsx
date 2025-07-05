@@ -1,8 +1,7 @@
-import React from 'react'
 import Github from '../../assets/icons/github.svg';
 import LinkedIn from '../../assets/icons/linkedin.svg';
 import NeonIcon from '../neon-icon/NeonIcon';
-import footerMask from '../../assets/images/footerMask.webp'
+import footerMask from '../../assets/images/footerMask.webp';
 
 
 function Footer() {

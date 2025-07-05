@@ -1,8 +1,7 @@
-import React from 'react'
 import SplashBackground from '../splash-background/SplashBackground'
 import meImg from '../../assets/images/me-hero.webp';
-import Button from '../button/Button';
 import extraSplash from '../../assets/images/extraSplash.webp';
+import { Link } from 'react-router-dom';
 
 
 function HeroSection() {
@@ -15,7 +14,10 @@ function HeroSection() {
       <div className='mt-8'>
         <h1 className='font-bold'>Hola ! Soy Aurélie </h1>
         <p className='my-6 mb-12 leading-normal'>Desarrolladora Full Stack con mentalidad analítica y resolutiva. Busco mi primera oportunidad laboral en Bilbao para crear soluciones con JavaScript en un entorno dinámico y desafiante.</p>
-        <Button>Contáctame</Button>
+        <Link to={{
+          pathname: '/home',
+          hash: "#contact"
+        }} className='button'>Contáctame</Link>
       </div>
     </section>
     

@@ -1,7 +1,6 @@
-import React from 'react'
-import SplashIcon from '../splash-icon/SplashIcon'
+import SplashIcon from '../splash-icon/SplashIcon';
 import mac from '../../assets/images/mac.webp';
-import Button from '../button/Button'
+import Button from '../button/Button';
 
 function ProjectCard({name, architecture, description, image, order, technologies}) {
   return (
@@ -20,8 +19,8 @@ function ProjectCard({name, architecture, description, image, order, technologie
         <p className='mt-8'>{description}</p>
 
         <div className='grid grid-cols-3 justify-items-center items-center md:flex animate-splash mb-12 w-full'>
-        {technologies && technologies.map((tech, indice) => (
-          <SplashIcon key={indice} icon={tech.tech} splash={tech.splash} name={tech.name}/>
+        {technologies && technologies.map((tech, index) => (
+          <SplashIcon key={index} icon={tech.tech} splash={tech.splash} name={tech.name}/>
         ))}         
         </div>
         <Button>Más info</Button>
