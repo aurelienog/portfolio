@@ -3,9 +3,8 @@ import MenuIcon from "../../assets/icons/menu.svg?react";
 
 function Navbar() {
   return (
-
-      <nav className='flex justify-around sticky top-0 font-bold font-sans text-2xl md:w-[80%] max-w-screen-xl  z-50 h-[var(--header-height)] md:grid items-center grid-cols-[auto_2fr] lg:grid-cols-[2fr_4fr] mx-auto'>
-          <Link to="/" className='animated-underline w-fit md:ml-8' aria-label='home' >Aurélie Nogueira</Link>
+      <nav className=' m-auto h-full flex justify-around font-bold font-sans text-2xl md:w-[80%] max-w-screen-xl md:grid items-center grid-cols-[auto_2fr] lg:grid-cols-[2fr_4fr]'>
+          <Link to="/" className='animated-underline md:w-fit md:ml-8' aria-label='home' >Aurélie Nogueira</Link>
           <label htmlFor='menu' className='md:hidden z-20'>
             <MenuIcon/>
           </label>

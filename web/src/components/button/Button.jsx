@@ -1,8 +1,6 @@
-import React from 'react'
-
-function Button({children}) {
+function Button({children, className}) {
   return (
-    <button className='button'>{children}</button>
+    <button className={`${className} button`}>{children}</button>
   )
 }
 

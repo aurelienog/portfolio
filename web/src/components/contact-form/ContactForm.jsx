@@ -1,9 +1,10 @@
 import { useForm} from 'react-hook-form';
 import service from '../../services/common';
 import { useState } from 'react';
+import  Button  from '../button/Button'
 
 function ContactForm() {
-  const { register, handleSubmit, reset,setError, formState: { errors, isValid, isSubmitting } } = useForm({mode: 'onChange'});
+  const { register, handleSubmit, reset, setError, formState: { errors, isValid, isSubmitting }} = useForm({mode: 'onChange'});
   const [serverError, setServerError] = useState();
   const [successMessage, setSuccessMessage] = useState();
 
@@ -27,10 +28,10 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onMessageSubmit)} className='my-12'>
+    <form onSubmit={handleSubmit(onMessageSubmit)} className='my-12 lg:w-[50%]'>
       <div className='mb-8'>
         {/*NAME*/}
-        <div className='flex flex-col h-32'>
+        <div className='flex flex-col h-32 mb-4'>
           <label htmlFor='name' className='p-2'><span className='text-red-600 font-medium'>*</span>Nombre :</label>
           <input id='name' type='text' placeholder='Jane Doe' {...register("name", { 
             required: "Por favor, ingrese su nombre.", 
@@ -42,7 +43,7 @@ function ContactForm() {
         </div>
 
         {/*Email*/}
-        <div className='flex flex-col h-32'>
+        <div className='flex flex-col h-32 mb-4'>
           <label htmlFor='email' className='p-2'><span className='text-red-600 font-medium'>*</span>Email :</label>
           <input id='email' type='email' placeholder='jane@example.com' className={`peer ${errors.email ? 'not-focus:border-red-600  not-focus:bg-red-200' : ''}` } {...register("email", {
             pattern: { 
@@ -54,7 +55,7 @@ function ContactForm() {
         </div>
 
         {/*Message*/}
-        <div className='flex flex-col min-h-52'>
+        <div className='flex flex-col min-h-56 mb-4'>
           <label htmlFor='message' className='p-2'><span className='text-red-600 font-medium'>*</span>Mensaje :</label>
           <textarea id='message' placeholder="Escriba su mensaje aquí..." className={`peer h-32 ${errors.message ? 'not-focus:border-red-600  not-focus:bg-red-200' : ''}` } {...register("message", { 
             required: "Por favor, ingrese su mensaje.", 
@@ -64,7 +65,7 @@ function ContactForm() {
         { errors.message && <div id="messageError" className='peer-not-focus:text-red-600 text-red-600/0 font-medium p-2'>{errors.message?.message}</div> }    
         </div>
 
-        <button type='submit' className={`mt-8 w-full button ${!isValid || isSubmitting ? 'opacity-70 pointer-events-none': ''}`}>{isSubmitting ? 'Enviando...' : 'Enviar mensaje'}</button>
+        <Button type='submit' className={`mt-8 w-full ${!isValid || isSubmitting ? 'opacity-70 pointer-events-none': ''}`}>{isSubmitting ? 'Enviando...' : 'Enviar mensaje'}</Button>
         
         {serverError && <div className="border font-medium w-full p-4 text-red-600 mt-10">{serverError}</div>}
         {successMessage && <div className="border font-medium w-full p-4 text-green-600 my-4">{successMessage}</div>}

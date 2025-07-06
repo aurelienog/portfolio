@@ -6,7 +6,7 @@
   --header-height:6rem;
   --color-text: #15080c;
   --color-background: #fafafc;
-  --color-primary: #f9436e;
+  --color-primary: ;
   --color-secondary: #e1bcc7;
   --color-accent: #f9436e;
   --color-cta: rgb(225, 5, 5, 0.9);
@@ -69,7 +69,6 @@
 }
 
 *:focus {
-  color: var(--color-accent);
   outline: var(--color-accent) solid 4px;
   border-radius: var(--border-radius);
   outline-offset: 10px;
@@ -221,10 +220,6 @@
       font-weight: var(--fw-bold);
     }
 
-    &:focus-within {
-      color: var(--color-accent);
-    }
-
     &::after {
       content: "";
       position: absolute;
@@ -235,11 +230,11 @@
       transition: width 300ms cubic-bezier(0.25, 0.8, 0.25, 1), left 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
     }
 
-    &:hover::after,
-    &:focus-visible::after {
+    &:hover::after {
       width: 100%;
       left: 0;
       background-color: currentColor;
     }
+
   }
 }
