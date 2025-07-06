@@ -8,7 +8,8 @@ function App() {
 
   return (
     <>
-      <header className="sticky top-0 bg-background z-50 h-[var(--header-height)] shadow-lg">
+      <header className="sticky top-0 bg-background z-50 h-[var(--header-height)]"> 
+        {/*  shadow-lg */}
         <Navbar/>
       </header>
       <Routes>

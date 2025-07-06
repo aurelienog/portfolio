@@ -8,7 +8,7 @@ function ProjectCard({name, architecture, description, image, index, technologie
   return (
     <div className='py-6 md:py-10 grid lg:grid-cols-2 md:gap-18'>
       <MacMockup image={image} alt={`captura de pantalla del proyecto ${name}`} className={isOdd? 'md:order-last' : 'md:order-first'}/>
-      <article className='space-y-4 py-8'>
+      <article className='py-8'>
         <h3>{name}<br></br></h3>
         <h4>{architecture}</h4>
         <p className='mt-8'>{description}</p>
