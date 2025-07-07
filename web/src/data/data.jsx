@@ -37,21 +37,21 @@ export const projects = [{
   id: 1,
   name: "Página de Adopción de Mascotas",
   architecture: "SPA con React",
-  description: <p>Tras desarrollar la primera versión de Fur-Ever Friends con server-side rendering (HBS), decidí modernizar la plataforma creando una <b>Single Page Application (SPA)</b> con React, optimizando la experiencia del usuario con una navegación más fluida y rápida.</p>,
+  description: <>Tras desarrollar la primera versión de Fur-Ever Friends con server-side rendering (HBS), decidí modernizar la plataforma creando una <b>Single Page Application (SPA)</b> con React, optimizando la experiencia del usuario con una navegación más fluida y rápida.</>,
   image: reactShelter,
   technologies:['MongoDb', 'Express','React', 'Node.js', 'Tailwindcss']
 }, {
     id: 2,
     name:"Página de Adopción de Mascotas",
     architecture: "SSR con handlebars",
-    description: <p>Fur-Ever Friends es un refugio de animales dedicado a encontrar hogares amorosos para mascotas. La web permite a los usuarios explorar animales en adopción, completar solicitudes y gestionar sus perfiles de manera sencilla e intuitiva.</p>,
+    description: <>Fur-Ever Friends es un refugio de animales dedicado a encontrar hogares amorosos para mascotas. La web permite a los usuarios explorar animales en adopción, completar solicitudes y gestionar sus perfiles de manera sencilla e intuitiva.</>,
     image: shelterExpress,
     technologies: ['MongoDb', 'Express','Handlebars', 'Node.js', 'Tailwindcss']
 }, {
   id: 3,
   name:"Shooter 2D",
   architecture:"JavaScript y Canvas",
-  description: <p>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b>un desafío progresivo</b> y dinámico.</p>,
+  description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b>un desafío progresivo</b> y dinámico.</>,
   image:grimm,
   technologies:['Html', 'Css', 'Javascript']
 }]
