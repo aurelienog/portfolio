@@ -1,4 +1,4 @@
-function SplashIcon({icon, splash, name}) {
+function SplashIcon({ name, icon, splash }) {
 
   return (
     <div className='h-25 aspect-square relative flex items-center justify-center md:scale-0'>

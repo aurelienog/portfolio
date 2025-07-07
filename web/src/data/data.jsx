@@ -24,70 +24,57 @@ export const projects = [{
   architecture: "SPA con React",
   description: 'Tras desarrollar la primera versión de Fur-Ever Friends con server-side rendering (HBS), decidí modernizar la plataforma creando una <b>Single Page Application (SPA)</b> con React, optimizando la experiencia del usuario con una navegación más fluida y rápida.',
   image: reactShelter,
-  technologies:[{
-    tech: mongoDbIcon, 
-    splash: greenSplash, 
-    name: 'MongoDb'
-  }, {
-    tech: expressIcon, 
-    splash: blueSplash, 
-    name: 'Express'
-  }, {
-    tech: reactIcon,
-    splash: orangeSplash, 
-    name:'React'
-  }, {
-    tech: nodejsIcon, 
-    splash: redSplash, 
-    name:'Node.js'
-  }, {
-    tech:tailwindIcon, 
-    splash:pinkSplash, 
-    name:'Tailwindcss'}]
+  technologies:['MongoDb', 'Express','React', 'Node.js', 'Tailwindcss']
 }, {
     id: 2,
     name:"Página de Adopción de Mascotas",
     architecture: "SSR con handlebars",
     description: 'Fur-Ever Friends es un refugio de animales dedicado a encontrar hogares amorosos para mascotas. La web permite a los usuarios explorar animales en adopción, completar solicitudes y gestionar sus perfiles de manera sencilla e intuitiva.',
     image: shelterExpress,
-    // order="last"
-    technologies: [{
-      tech: mongoDbIcon, 
-      splash: greenSplash, 
-      name: 'MongoDb'
-    }, {
-    tech: expressIcon, 
-    splash: blueSplash, 
-    name: 'Express'
-  }, {
-    tech: hbsIcon, 
-    splash: orangeSplash, 
-    name: 'Handlebars'
-  }, {
-    tech: nodejsIcon, 
-    splash: redSplash, 
-    name: 'Node.js'
-  }, {
-    tech: tailwindIcon, 
-    splash: pinkSplash, 
-    name: 'Tailwindcss'}]
+    technologies: ['MongoDb', 'Express','Handlebars', 'Node.js', 'Tailwindcss']
 }, {
   id: 3,
   name:"Shooter 2D",
   architecture:"JavaScript y Canvas",
   description:'Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a <b>un personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b>un desafío progresivo y dinámico.',
   image:grimm,
-  technologies:[{
-    tech: htmlIcon, 
-    splash: orangeSplash,
-    name:'Html'
-  }, {
-    tech: cssIcon,
-    splash: blueSplash, 
-    name: 'Css'
-  }, { 
-    tech: jsIcon,
-    splash: yellowSplash,
-    name: 'Javascript'}]
+  technologies:['Html', 'Css', 'Javascript']
 }]
 
+export const technologies = [{
+  name: 'HTML',
+  icon: htmlIcon,
+  splash: orangeSplash
+}, {
+  name: 'CSS',
+  icon: cssIcon,
+  splash: blueSplash
+}, {
+  name: 'Javascript',
+  icon: jsIcon,
+  splash: yellowSplash
+}, {
+  name: 'TailwindCSS',
+  icon: tailwindIcon, 
+  splash: pinkSplash, 
+}, {
+  name: 'Node.js',
+  icon: nodejsIcon, 
+  splash: redSplash, 
+}, {
+  name: 'Handlebars',
+  icon: hbsIcon, 
+  splash: orangeSplash, 
+}, {
+  name: 'Express',
+  icon: expressIcon, 
+  splash: blueSplash, 
+}, {
+  name: 'MongoDb',
+  icon: mongoDbIcon, 
+  splash: greenSplash, 
+}, {
+  name:'React',
+  icon: reactIcon,
+  splash: orangeSplash, 
+}];

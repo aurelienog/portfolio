@@ -147,6 +147,9 @@
     }
   }
 
+  nav ul:hover li:not(:hover) {
+    opacity: 0.5;
+  }
 
   p {
     @apply md:text-xl;
@@ -218,7 +221,7 @@
     position: relative;   
     text-decoration: none;
     color: inherit;
-    transition: color 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: color 300ms cubic-bezier(0.25, 0.8, 0.25, 1), opacity 300ms cubic-bezier(0.25, 0.8, 0.25, 1),  opacity 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
 
     &:hover {
       font-weight: var(--fw-bold);
@@ -239,6 +242,5 @@
       left: 0;
       background-color: currentColor;
     }
-
   }
 }
