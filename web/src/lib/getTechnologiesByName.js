@@ -1,9 +1,10 @@
-import { technologies } from "../data/data";
+import { illustratedTechnologies } from "../data/data";
 
-function getTechnologiesByName(techNames) {
+function getTechnologiesByName(input) {
+  const techNames = Array.isArray(input) ? input : [input];
   return techNames
     .map((name) => 
-      technologies.find(
+      illustratedTechnologies.find(
         (tech) => tech.name.toLowerCase() === name.toLowerCase()
       )
     )
