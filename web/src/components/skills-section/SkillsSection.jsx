@@ -7,7 +7,7 @@ function SkillsSection() {
       <h2 className="text-center">Stack Tecnológico</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 sm:justify-items-center space-y-8">
         {techStacks.map((stack, index) => {
-          return <article key={index} >
+          return <article key={index}>
             <h3 className='max-w-40'>{stack.name}</h3>
             <ul className='space-y-1'>
               {stack.skills.map((skill, i) => {

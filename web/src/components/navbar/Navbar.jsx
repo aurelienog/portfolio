@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
-import MenuIcon from "../../assets/icons/menu.svg?react";
+import { useState } from "react";
+import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+  console.log(open)
+  const handleClick = () => { setOpen(prev => !prev)};
+
   return (
-      <nav className=' m-auto h-full flex justify-around font-bold font-sans text-2xl md:w-[80%] max-w-screen-xl md:grid items-center grid-cols-[auto_2fr] lg:grid-cols-[2fr_4fr]'>
-          <Link to="/" className='animated-underline md:w-fit md:ml-8' aria-label='home' >Aurélie Nogueira</Link>
-          <label htmlFor='menu' className='md:hidden z-20'>
-            <MenuIcon/>
-          </label>
-          <input id='menu' type='checkbox' className='hidden peer'/>
-          <ul className='fixed pt-16 inset-0 space-y-8 text-center md:space-y-0 md:p-0 bg-pink-300 md:bg-background md:relative md:items-center md:flex md:justify-self-end md:gap-32 [clip-path:circle(0%_at_top_right)] peer-checked:[clip-path:circle(65%_at_top_right)] md:[clip-path:circle(150%_at_top_right)] transition-[clip-path] duration-500'>
-            <li className='animated-underline'><Link to="/about">Sobre Mí</Link></li>
-            <li className='animated-underline'><Link to="/projects">Mis proyectos</Link></li>
-            <li className='animated-underline'><Link to={{ pathname: '/home', hash: "#contact" }}>Contáctame</Link></li>
+      <nav id="main-navigation" className='md:w-[80%] mx-auto max-w-screen-xl md:mx-auto px-14 md:px-4 relative font-sans text-2xl flex items-center justify-between'>
+          <Link to="/" onClick={() => setOpen(false)}  className='animated-underline z-50' aria-label='home' >Aurélie Nogueira</Link>
+          <HamburgerMenu handleClick={ handleClick } open={open}/>
+          <ul className={`${open ? 'absolute w-full top-0 left-0 px-14 my-16 py-12 z-40 bg-background grid justify-start md:relative md:flex md:justify-end md:my-0 md:p-0 md:gap-20' : 'hidden  md:relative md:flex md:mt-0 md:p-0 md:gap-20'}`}>
+            <li onClick={() => setOpen(false)} className='animated-underline'><Link to="/about">Sobre Mí</Link></li>
+            <li onClick={() => setOpen(false)} className='animated-underline'><Link to="/projects">Mis proyectos</Link></li>
+            <li onClick={() => setOpen(false)} className='animated-underline'><Link to={{ pathname: '/home', hash: "#contact" }}>Contáctame</Link></li>
           </ul>
       </nav>
   )

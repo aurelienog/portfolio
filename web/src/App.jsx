@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <header className="sticky top-0 bg-background z-50 h-[var(--header-height)]"> 
+      <header className="sticky top-0 bg-background z-50 h-[var(--header-height)] content-center"> 
         {/*  shadow-lg */}
         <Navbar/>
       </header>

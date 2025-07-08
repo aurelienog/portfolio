@@ -83,22 +83,18 @@
     overscroll-behavior: none;
   }
 
-  section {
-    padding: 4rem 0;
-  }
-
   h1, h2, h3, h4 {
     font-family: var(--font-sans);
+    font-weight: 700;
   }
 
   h1 {
-    @apply text-7xl md:text-9xl; 
-    font-weight: bold;
+    @apply text-6xl md:text-9xl; 
     margin-bottom: 6rem;
   }
 
   h2 {
-    @apply text-5xl md:text-6xl mb-16;
+    @apply text-5xl md:text-6xl mb-14;
   }
 
   h3 {
