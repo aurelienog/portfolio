@@ -89,13 +89,13 @@
 
   h1, h2, h3, h4 {
     font-family: var(--font-sans);
-    font-weight: 700;
   }
 
   h1 {
     @apply text-6xl md:text-9xl; 
     margin-top: 4rem;
     margin-bottom: 6rem;
+    font-weight: 700;
   }
 
   h2 {
@@ -225,6 +225,16 @@
     color: var(--color-accent);
   }
 
+  .visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  overflow: hidden;
+}
+
   .animated-underline {
     position: relative;   
     text-decoration: none;
@@ -248,6 +258,12 @@
 }
 
 @media(min-width: 768px) {
+  
+  h1, h2, h3, h4 {
+    font-family: var(--font-sans);
+    font-weight: 700;
+  }
+
   .animated-underline:hover::after  {
       width: 100%;
       left: 0;

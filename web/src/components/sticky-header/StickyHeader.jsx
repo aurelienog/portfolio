@@ -25,7 +25,7 @@ function StickyHeader({children}) {
   }, []);
 
   return (
-    <header className={`${isSticky? 'sticky top-0 shadow-2xl' : 'relative'} bg-background z-50 h-[var(--header-height)] content-center`}>
+    <header className={`${isSticky? 'sticky top-0 shadow-xl' : 'relative'} bg-background z-50 h-[var(--header-height)] content-center transition-all duration-300 `}>
       {children}
     </header>
   )

@@ -19,7 +19,7 @@ function ProjectCard({name, architecture, description, image, index, technologie
           <SplashIcon key={index} {...tech}/>
         ))}         
         </div>
-        <Link to="/projects" className='button'>Más info</Link>
+        <Link to="/projects" className='button'>Más info<span className='visually hidden'>sobre el proyecto {name}</span></Link>
       </article>
     </div>
     
