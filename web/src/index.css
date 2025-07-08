@@ -90,6 +90,7 @@
 
   h1 {
     @apply text-6xl md:text-9xl; 
+    margin-top: 4rem;
     margin-bottom: 6rem;
   }
 
