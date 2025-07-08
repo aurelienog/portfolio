@@ -1,9 +1,8 @@
-import PageLayout from '../components/layout/PageLayout';
 import { Link } from "react-router-dom";
 
 function AboutPage() {
   return (
-    <PageLayout>
+
       <section className="mx-auto">
         <h1 className='text-[54px] md:text-9xl'>Mi viaje hacia la programación</h1>
         <div className='md:grid grid-cols-[2fr_1fr]'>
@@ -21,7 +20,7 @@ function AboutPage() {
         </figure>
         </div>        
 </section>
-    </PageLayout>
+
 
   )
 }

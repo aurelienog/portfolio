@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
 import ProjectsPage from "./pages/ProjectsPage"
 import Footer from "./components/footer/Footer"
+import PageLayout from "./components/layout/PageLayout"
 
 
 function App() {
@@ -14,11 +15,13 @@ function App() {
       <StickyHeader> 
         <Navbar/>
       </StickyHeader>
-      <Routes>
-        <Route path="/home?" element={<HomePage/>}/>
-        <Route path="/about" element={<AboutPage/>}/>
-        <Route path="/projects" element={<ProjectsPage/>}/>
-      </Routes>
+      <PageLayout>
+        <Routes>
+          <Route path="/home?" element={<HomePage/>}/>
+          <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/projects" element={<ProjectsPage/>}/>
+        </Routes>
+      </PageLayout>
       <Footer/>
     </>
   )

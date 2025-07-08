@@ -18,7 +18,6 @@ function HeroSection() {
           pathname: '/home',
           hash: "#contact"
         }} className='button'>Contáctame</Link>
-        <div id="sticky-trigger" aria-hidden className="h-[1px]"></div>
       </article>
     </section>
     
