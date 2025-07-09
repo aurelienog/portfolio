@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { BrowserRouter as Router } from "react-router-dom"
-import ScrollToAnchor from './lib/ScrollToAnchor.js'
+import ScrollToAnchorOrTop from './lib/ScrollToAnchorOrTop.js'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode> 
     <Router>
-      <ScrollToAnchor/>
+      <ScrollToAnchorOrTop/>
       <App />
     </Router>
   </StrictMode>,

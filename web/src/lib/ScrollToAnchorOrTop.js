@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 
-function ScrollToAnchor() {
+function ScrollToAnchorOrTop() {
   const location = useLocation();
   const lastHash = useRef('');
 
@@ -19,10 +19,12 @@ function ScrollToAnchor() {
           ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         lastHash.current = '';
       }, 100);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [location]);
 
   return null;
 }
 
-export default ScrollToAnchor;
+export default ScrollToAnchorOrTop;
