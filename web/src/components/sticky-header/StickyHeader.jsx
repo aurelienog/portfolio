@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import ScrollProgressBar from "../scroll-progress-bar/ScrollProgressBar";
 
 function StickyHeader({children}) {
   const [isSticky, setIsSticky] = useState(false);
@@ -25,8 +26,9 @@ function StickyHeader({children}) {
   }, []);
 
   return (
-    <header className={`${isSticky? 'sticky top-0 shadow-xl' : 'relative'} bg-background z-50 h-[var(--header-height)] content-center transition-all duration-300 `}>
+    <header className={`${isSticky? 'sticky top-0 shadow-xl' : 'sticky top-0 '} bg-background z-50 h-[var(--header-height)] content-center transition-[box-shadow] duration-300 `}>
       {children}
+      <ScrollProgressBar/>
     </header>
   )
 }
