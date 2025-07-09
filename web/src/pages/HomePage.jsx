@@ -6,7 +6,7 @@ import SkillsSection from '../components/skills-section/SkillsSection'
 
 function HomePage() {
   return (
-    <main id='hero'>
+    <main>
         <HeroSection/>
         <SkillsSection/>
         <ProjectsSection/>

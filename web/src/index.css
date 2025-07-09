@@ -5,7 +5,7 @@
 @theme{
   --header-height:6rem;
   --color-text: #15080c;
-  --color-background: #fafafc;
+  --color-background: #FEF8F4;
   --color-primary: ;
   --color-secondary: #e1bcc7;
   --color-accent: #f9436e;
@@ -73,7 +73,6 @@
   border-radius: var(--border-radius);
   outline-offset: 10px;
 }
-
   body {
     background-color: var(--color-background);
     color: var(--color-text);
@@ -81,6 +80,13 @@
     line-height: 1.6;
     overflow-x: hidden;
     overscroll-behavior: none;
+  }
+
+  main {
+    width: 80%;
+    position: relative;
+    margin: auto;
+    max-width: 80rem;
   }
 
   section:not(:last-of-type) {
@@ -98,15 +104,17 @@
   }
 
   h1 {
-    @apply text-6xl md:text-9xl; 
+    @apply text-6xl md:text-8xl; 
+    max-width: 20ch;
+    margin: auto;
+    text-align: center;
     margin-top: 4rem;
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
     font-weight: 700;
   }
 
   h2 {
     @apply text-5xl md:text-6xl mb-14;
-        font-weight: 600;
   }
 
   h3 {
@@ -128,7 +136,7 @@
   input, textarea {
     cursor: pointer;
     padding: 1em;
-    background-color: #fbf6fb;
+    background-color: #fbf6fb82;
     border: solid 2px transparent; 
     border-radius: var(--border-radius);
     box-shadow:
@@ -141,14 +149,14 @@
     box-shadow:
     inset 2px 2px 4px rgba(0, 0, 0, 0.15),
     inset -1px -1px 3px rgba(255, 255, 255, 0.5);
-    background-color: #ffdcf083;
+    background-color: #ffdbd1;
     font-weight: 500;
     color: var(--color-text);
     }
 
     &:is(input:focus, textarea:focus) {
     outline: none;
-    background-color: #c1f3c3;
+    background-color: #ffdbd1;
     box-shadow:
     inset 4px 4px 8px rgba(0, 0, 0, 0.25),
     inset -2px -2px 4px rgba(255, 255, 255, 0.5);
@@ -169,6 +177,11 @@
 }
 
 @layer utilities {
+
+  .grid-auto-fit {
+    --grid-min-column-size: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-column-size), 100%), 1fr));
+  }
 
   .animate-show {
     view-timeline-name: --image;
@@ -281,9 +294,14 @@
 
 @media(min-width: 768px) {
 
+  h2 {
+    font-weight: 600;
+  }
+
   .animated-underline:hover::after  {
       width: 100%;
       left: 0;
       background-color: currentColor;
     }
   }
+

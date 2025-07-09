@@ -5,24 +5,24 @@ import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
 import ProjectsPage from "./pages/ProjectsPage"
 import Footer from "./components/footer/Footer"
-import PageLayout from "./components/layout/PageLayout"
+import GradientLayout from "./components/layout/GradientLayout"
 
 
 function App() {
 
   return (
     <>
-      <StickyHeader> 
-        <Navbar/>
-      </StickyHeader>
-      <PageLayout>
+      <GradientLayout>
+        <StickyHeader> 
+          <Navbar/>
+        </StickyHeader>  
         <Routes>
           <Route path="/home?" element={<HomePage/>}/>
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/projects" element={<ProjectsPage/>}/>
         </Routes>
-      </PageLayout>
-      <Footer/>
+        <Footer/>
+      </GradientLayout>
     </>
   )
 }

@@ -1,15 +1,14 @@
-import PageLayout from '../components/layout/PageLayout'
+import Gallery from '../components/gallery/Gallery';
+import { projects } from '../data/data'
 
 function ProjectsPage() {
   return (
-    <PageLayout>
       <main>
         <section>
-          <h1>Work In Progress</h1>
-        </section>
-        
+          <h1>Mis proyectos</h1>
+          <Gallery projects={ projects }/>
+        </section>     
       </main>
-    </PageLayout>
   )
 }
 

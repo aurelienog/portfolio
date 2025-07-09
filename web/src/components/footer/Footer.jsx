@@ -6,7 +6,7 @@ import footerMask from '../../assets/images/footerMask.webp';
 
 function Footer() {
   return (
-    <footer style={{ WebkitMaskImage: `url(${footerMask})`, maskImage: `url(${footerMask})` }} className={`bg-[url(../../footerImg.webp)] bg-bottom bg-cover h-[20rem] flex flex-col justify-end p-8 [-webkit-mask-size:auto_100%] md:[-webkit-mask-size:100%_100%] [-webkit-mask-repeat:no-repeat] [-webkit-mask-position:center] [mask-size:auto_100%] md:[mask-size:100%_100%] [mask-repeat:no-repeat] [mask-position:center]`}>
+    <footer style={{ WebkitMaskImage: `url(${footerMask})`, maskImage: `url(${footerMask})` }} className={`bg-[url(../../footerImg.webp)] bg-bottom bg-cover h-[20rem] flex flex-col justify-end p-8 [-webkit-mask-size:auto_100%] md:[-webkit-mask-size:100%_100%] [-webkit-mask-repeat:no-repeat] [-webkit-mask-position:center] [mask-size:auto_100%] md:[mask-size:100%_100%] [mask-repeat:no-repeat] [mask-position:center] `}>
       <ul className='flex justify-center gap-6 p-4 w-[80%] mx-auto'>
         <li><NeonIcon icon={Github} url="https://github.com/aurelienog" aria={'Github'}/></li>
         <li><NeonIcon icon={LinkedIn} url="https://www.linkedin.com/in/aurelie-nogueira" aria={'LinkedIn'} /></li>
