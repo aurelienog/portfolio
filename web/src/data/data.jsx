@@ -2,6 +2,7 @@
 import shelterExpress from '../assets/images/shelterExpress.webp';
 import reactShelter from '../assets/images/reactShelter.webp';
 import grimm from '../assets/images/grimm.webp';
+import anjImg from '../assets/images/anj-home.webp';
 
 // icons
 import expressIcon from '../assets/icons/express.svg';
@@ -31,9 +32,18 @@ import greenSplash from '../assets/images/greenSplash.webp';
 import pinkSplash from '../assets/images/pinkSplash.webp';
 import blueSplash from '../assets/images/blueSplash.webp';
 import yellowSplash from '../assets/images/yellowSplash.webp';
+import purpleSplash from '../assets/images/purpleSplash.webp';
+import greySplash from '../assets/images/greySplash.webp';
 
 
 export const projects = [{
+  id: 1,
+  name: "ANJ Renov",
+  architecture: "SSR con Next.Js, TypeScript y hosting en Vercel",
+  description: <>Sitio web de ANJ Renov, una empresa familiar especializada en pintura y reformas en Francia. El sitio fue diseñado para ofrecer una experiencia rápida y accesible, con un enfoque en la optimización SEO. Su objetivo es destacar los servicios ofrecidos y transmitir la profesionalidad, cercanía y trayectoria de la empresa.</>,
+  image: anjImg,
+  technologies:['Next.js', 'TypeScript','Css', 'framer motion', 'vercel']
+}, {
   id: 1,
   name: "Página de Adopción de Mascotas",
   architecture: "SPA con React",
@@ -41,19 +51,19 @@ export const projects = [{
   image: reactShelter,
   technologies:['MongoDb', 'Express','React', 'Node.js', 'Tailwindcss']
 }, {
-    id: 2,
-    name:"Página de Adopción de Mascotas",
-    architecture: "SSR con handlebars",
-    description: <>Fur-Ever Friends es un refugio de animales dedicado a encontrar hogares amorosos para mascotas. La web permite a los usuarios explorar animales en adopción, completar solicitudes y gestionar sus perfiles de manera sencilla e intuitiva.</>,
-    image: shelterExpress,
-    technologies: ['MongoDb', 'Express','Handlebars', 'Node.js', 'Tailwindcss']
-}, {
-  id: 3,
+  id: 2,
   name:"Shooter 2D",
   architecture:"JavaScript y Canvas",
   description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b>un desafío progresivo</b> y dinámico.</>,
   image:grimm,
   technologies:['Html', 'Css', 'Javascript']
+}, {
+    id: 3,
+    name:"Página de Adopción de Mascotas",
+    architecture: "SSR con handlebars",
+    description: <>Fur-Ever Friends es un refugio de animales dedicado a encontrar hogares amorosos para mascotas. La web permite a los usuarios explorar animales en adopción, completar solicitudes y gestionar sus perfiles de manera sencilla e intuitiva.</>,
+    image: shelterExpress,
+    technologies: ['MongoDb', 'Express','Handlebars', 'Node.js', 'Tailwindcss']
 }]
 
 export const illustratedTechnologies = [{
@@ -63,7 +73,7 @@ export const illustratedTechnologies = [{
 }, {
   name: 'CSS',
   icon: cssIcon,
-  splash: blueSplash
+  splash: purpleSplash
 }, {
   name: 'Javascript',
   icon: jsIcon,
@@ -111,7 +121,7 @@ export const illustratedTechnologies = [{
 }, {
   name:'Next.js',
   icon: nextjsIcon,
-  splash: orangeSplash, 
+  splash: greySplash, 
 }, {
   name:'Next-Auth',
   icon: nextjsIcon,
@@ -119,7 +129,7 @@ export const illustratedTechnologies = [{
 },  {
   name:'Vercel',
   icon: vercelIcon,
-  splash: orangeSplash, 
+  splash: greySplash, 
 }, {
   name:'EsLint',
   icon: eslintIcon,
@@ -127,7 +137,7 @@ export const illustratedTechnologies = [{
 }, {
   name:'framer motion',
   icon: motionIcon,
-  splash: orangeSplash, 
+  splash: yellowSplash, 
 }, {
   name:'Git & Github',
   icon: githubIcon,

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Gallery({ projects }) {
   return (
-    <div className="grid grid-auto-fit p-8 gap-8 w-full">
+    <div className="grid grid-auto-fit gap-8 w-full [&:has(.galleryCard:hover)_.galleryCard:not(:hover)]:grayscale [&:has(.galleryCard:hover)_.galleryCard:not(:hover)]:brightness-50">
       { projects?.map((project, index) => (
         <Link to={`/projects/${project.id}`} key={index}>
           <GalleryCard  {...project}/>
