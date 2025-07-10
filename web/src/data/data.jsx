@@ -2,7 +2,7 @@
 import shelterExpress from '../assets/images/shelterExpress.webp';
 import reactShelter from '../assets/images/reactShelter.webp';
 import grimm from '../assets/images/grimm.webp';
-import anjImg from '../assets/images/anj-home.webp';
+import anjImg from '../assets/images/ANJ-Home.webp';
 
 // icons
 import expressIcon from '../assets/icons/express.svg';
