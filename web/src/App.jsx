@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage"
 import ProjectsPage from "./pages/ProjectsPage"
 import Footer from "./components/footer/Footer"
 import GradientLayout from "./components/layout/GradientLayout"
+import ProjectPage from "./pages/ProjectPage"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/home?" element={<HomePage/>}/>
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/projects" element={<ProjectsPage/>}/>
+          <Route path="/projects/:id" element={<ProjectPage/>}/>
         </Routes>
         <Footer/>
       </GradientLayout>

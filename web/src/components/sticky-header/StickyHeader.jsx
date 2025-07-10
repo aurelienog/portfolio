@@ -26,7 +26,7 @@ function StickyHeader({children}) {
   }, []);
 
   return (
-    <header className={`${isSticky? 'sticky top-0 shadow-xl' : 'sticky top-0 '} bg-background z-50 h-[var(--header-height)] content-center transition-[box-shadow] duration-300 `}>
+    <header className={`${isSticky? 'sticky top-0 shadow-xl bg-background' : 'sticky top-0 '}  z-50 h-[var(--header-height)] content-center transition-[box-shadow] duration-300 `}>
       {children}
       <ScrollProgressBar/>
     </header>

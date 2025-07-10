@@ -16,7 +16,7 @@ function ProjectCard({name, architecture, description, image, index, technologie
         <p className='my-4'>{description}</p>
         <div className='flex flex-wrap justify-start animate-splash mb-10 w-full'>
         {technologyObjects.map((tech, index) => (
-          <SplashIcon key={index} {...tech}/>
+          <SplashIcon key={index} {...tech} height={'h-15 md:h-20'}/>
         ))}         
         </div>
         <Link to="/projects" className='button'>Más info<span className='visually hidden'>sobre el proyecto {name}</span></Link>

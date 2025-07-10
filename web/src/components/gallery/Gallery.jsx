@@ -1,11 +1,14 @@
 import GalleryCard from "./GalleryCard"
+import { Link } from 'react-router-dom';
 
 function Gallery({ projects }) {
-  console.log(projects)
   return (
     <div className="grid grid-auto-fit p-8 gap-8 w-full">
       { projects?.map((project, index) => (
-        <GalleryCard key={index} {...project}/>
+        <Link to={`/projects/${project.id}`} key={index}>
+          <GalleryCard  {...project}/>
+        </Link>
+        
       ))}
     </div>
   )

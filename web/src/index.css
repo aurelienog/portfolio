@@ -105,12 +105,10 @@
 
   h1 {
     @apply text-6xl md:text-8xl; 
-    max-width: 20ch;
     margin: auto;
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 8rem;
-    font-weight: 700;
   }
 
   h2 {
@@ -149,14 +147,14 @@
     box-shadow:
     inset 2px 2px 4px rgba(0, 0, 0, 0.15),
     inset -1px -1px 3px rgba(255, 255, 255, 0.5);
-    background-color: #ffdbd1;
+    background-color: #f8f0ee;
     font-weight: 500;
     color: var(--color-text);
     }
 
     &:is(input:focus, textarea:focus) {
     outline: none;
-    background-color: #ffdbd1;
+    background-color: #ffe8e2;
     box-shadow:
     inset 4px 4px 8px rgba(0, 0, 0, 0.25),
     inset -2px -2px 4px rgba(255, 255, 255, 0.5);
@@ -203,6 +201,7 @@
     animation-fill-mode:none;
     animation-duration: 0.6s;
     animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    @apply md:scale-0;
   }
 
   .animate-splash > *:nth-child(1) { animation-delay: 0s; }
@@ -294,8 +293,8 @@
 
 @media(min-width: 768px) {
 
-  h2 {
-    font-weight: 600;
+  h1, h2 {
+    font-weight: bold;
   }
 
   .animated-underline:hover::after  {
