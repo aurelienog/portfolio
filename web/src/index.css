@@ -13,7 +13,6 @@
   --font-montserrat: "Montserrat", serif;
   --font-sans: "Bebas Neue", "Oswald", "Anton", "impact";
   --border-radius: 2rem;
-
   --animate-show : show;
   --animate-splash : splash;
 
@@ -93,11 +92,6 @@
     margin-bottom: 11rem;
   }
 
-    section:last-of-type {
-    margin-bottom: 6rem;
-    @apply md:mb-32; 
-  }
-
   h1, h2, h3, h4 {
     font-family: var(--font-sans);
     
@@ -163,21 +157,20 @@
     }
   }
 
-  nav ul:hover li:not(:hover) {
+  nav ul:hover li:not(:hover), 
+  footer ul:hover li:not(:hover) {
     opacity: 0.5;
   }
 
   p {
     @apply md:text-xl;
   }
-
-
 }
 
 @layer utilities {
 
   .grid-auto-fit {
-    --grid-min-column-size: 300px;
+    --grid-min-column-size: 295px;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--grid-min-column-size)), 1fr));
   }
 

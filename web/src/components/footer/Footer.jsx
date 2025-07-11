@@ -1,18 +1,26 @@
 import Github from '../../assets/icons/github.svg';
 import LinkedIn from '../../assets/icons/linkedin.svg';
 import NeonIcon from '../neon-icon/NeonIcon';
-import footerMask from '../../assets/images/footerMask.webp';
+import { Link } from "react-router-dom";
 
-
+// #FEF8F4
 function Footer() {
   return (
-    <footer style={{ WebkitMaskImage: `url(${footerMask})`, maskImage: `url(${footerMask})` }} className={`bg-[url(../../footerImg.webp)] bg-bottom bg-cover h-[20rem] flex flex-col justify-end p-8 [-webkit-mask-size:auto_100%] md:[-webkit-mask-size:100%_100%] [-webkit-mask-repeat:no-repeat] [-webkit-mask-position:center] [mask-size:auto_100%] md:[mask-size:100%_100%] [mask-repeat:no-repeat] [mask-position:center] `}>
-      <ul className='flex justify-center gap-6 p-4 w-[80%] mx-auto'>
+    <footer className='pt-50 relative z-10' style={{
+      background: "radial-gradient(150% 85% at 50% 1%, transparent 30%, rgb(255, 160, 146) 120%)",
+    }}>
+
+      <ul className='grid justify-center text-center my-8 font-sans text-2xl'>
+        <li><Link to='/' className='animated-underline outline-0 focus:text-accent '>Top</Link></li>
+        <li><Link to="/about" className='animated-underline outline-0 focus:text-accent '>Sobre Mí</Link></li>
+        <li><Link to="/projects" className='animated-underline outline-0 focus:text-accent '>Mis proyectos</Link></li>
+        <li><Link to="/#contact" className='animated-underline outline-0 focus:text-accent '>Contáctame</Link></li>
+      </ul>
+      <ul className='flex justify-center gap-6 w-[80%] mx-auto '>
         <li><NeonIcon icon={Github} url="https://github.com/aurelienog" aria={'Github'}/></li>
         <li><NeonIcon icon={LinkedIn} url="https://www.linkedin.com/in/aurelie-nogueira" aria={'LinkedIn'} /></li>
       </ul>
-      <p className="text-xs text-center">&copy; 2025 Aurélie Nogueira. Todos los derechos reservados. <br></br>
-      Ilustraciones por <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Freepik</a>.</p>
+      <p className="text-xs text-center mt-6">&copy; 2025 Aurélie Nogueira. Todos los derechos reservados.</p>
     </footer>
   )
 }

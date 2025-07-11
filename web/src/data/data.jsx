@@ -39,26 +39,58 @@ import greySplash from '../assets/images/greySplash.webp';
 export const projects = [{
   id: 1,
   name: "ANJ Renov",
-  architecture: "SSR con Next.Js, TypeScript y hosting en Vercel",
+  architecture: "SSR con Next.Js y hosting en Vercel",
   description: <>Sitio web de ANJ Renov, una empresa familiar especializada en pintura y reformas en Francia. El sitio fue diseñado para ofrecer una experiencia rápida y accesible, con un enfoque en la optimización SEO. Su objetivo es destacar los servicios ofrecidos y transmitir la profesionalidad, cercanía y trayectoria de la empresa.</>,
+  overview: [{
+    question: '¿Qué es?',
+    answer: 'Un sitio web corporativo para una empresa de reformas francesa.'
+  }, {
+    question: '¿Para qué sirve?',
+    answer: 'Mostrar sus servicios, diferenciarse de la competencia y generar confianza para captar clientes.'
+  }, {
+    question: '¿Por qué lo hice?',
+    answer: 'Proyecto real para un cliente (ANJ Renov). Me ocupé del diseño, desarrollo, contenido y despliegue. El objetivo era lograr una web que transmitiera profesionalismo, calidad artesanal y buena UX.'
+  }, ],
   image: anjImg,
-  technologies:['Next.js', 'TypeScript','Css', 'framer motion', 'vercel']
+  technologies:['Next.js', 'TypeScript','Css', 'framer motion', 'vercel'],
+  learnings:[
+    <>How to <b className='highlight'>structure</b> a modern Next.js 15 project using the App Router and Server Actions</>, 
+    <>Implementing best practices for SSR</>,
+    <>lazy loading (Suspense, next/dynamic) and code splitting</>, 
+    <>Enhancing accessibility through semantic HTML</>,
+    <>color contrast, descriptive alt text and full keyboard (Tab) navigation support</>,
+    <>Deploying a production-ready app on Vercel and debugging common deployment issues</>],
+  features: [
+    'Server-side rendering (Next.js 15)',
+    'SEO optimizado (meta tags, Lighthouse 100%)',
+    'Accesibilidad real(HTML semantico, teclado, contraste, ARIA)',
+    'Diseño responsive y elegante',
+    'Animaciones con Framer Motion (contadores, parallax, efectos reveal)',
+    'Galería de imágenes con carga diferida (lazy loading)',
+    'Tabla comparativa (artesano vs. multinacional vs. low cost)',
+    'Slider interactivo para comparar imágenes “antes / después”',
+    'Formulario de contacto con validación (cliente + servidor) y mensajes de error'],
+    links: {
+      github: 'https://github.com/aurelienog/renov',
+      live: 'https://renov-three.vercel.app/'
+    },
+  softSkills: [<>Diseño UX centrado en el usuario</>, <>Redacción clara y persuasiva</>, <>Pensamiento estratégico (enfocado a conversión y confianza)</>, <>Accesibilidad real y ética</>, <>Capacidad para manejar un proyecto completo: diseño, frontend, backend, deploy y SEO</>]
 }, {
-  id: 1,
+  id: 2,
   name: "Página de Adopción de Mascotas",
   architecture: "SPA con React",
   description: <>Tras desarrollar la primera versión de Fur-Ever Friends con server-side rendering (HBS), decidí modernizar la plataforma creando una <b>Single Page Application (SPA)</b> con React, optimizando la experiencia del usuario con una navegación más fluida y rápida.</>,
   image: reactShelter,
   technologies:['MongoDb', 'Express','React', 'Node.js', 'Tailwindcss']
 }, {
-  id: 2,
+  id: 3,
   name:"Shooter 2D",
   architecture:"JavaScript y Canvas",
   description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b>un desafío progresivo</b> y dinámico.</>,
   image:grimm,
   technologies:['Html', 'Css', 'Javascript']
 }, {
-    id: 3,
+    id: 4,
     name:"Página de Adopción de Mascotas",
     architecture: "SSR con handlebars",
     description: <>Fur-Ever Friends es un refugio de animales dedicado a encontrar hogares amorosos para mascotas. La web permite a los usuarios explorar animales en adopción, completar solicitudes y gestionar sus perfiles de manera sencilla e intuitiva.</>,

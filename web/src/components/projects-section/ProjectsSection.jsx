@@ -1,6 +1,7 @@
 import ProjectCard from './ProjectCard'
 import { projects } from '../../data/data'
 
+
 function ProjectsSection() {
   const filteredProjects = projects.slice(0, 3)
   return (
