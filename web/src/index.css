@@ -170,7 +170,7 @@
 @layer utilities {
 
   .grid-auto-fit {
-    --grid-min-column-size: 295px;
+    --grid-min-column-size: 300px;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--grid-min-column-size)), 1fr));
   }
 

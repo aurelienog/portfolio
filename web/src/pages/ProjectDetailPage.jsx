@@ -3,10 +3,11 @@ import { useParams } from "react-router-dom";
 import { projects } from "../data/data";
 import LandingDetail from '../components/sections/detail-page/LandingDetail';
 import Overview from '../components/sections/detail-page/Overview';
-import Features from "../components/sections/detail-page/features";
+import Features from "../components/sections/detail-page/Features";
 import TechStack from "../components/sections/detail-page/TechStack";
 import SoftSkills from "../components/sections/detail-page/SoftSkills";
 import Learnings from "../components/sections/detail-page/Learnings";
+import NextSteps from "../components/sections/detail-page/NextSteps";
 import Links from "../components/sections/detail-page/Links";
 
 function ProjectDetailPage() {
@@ -38,7 +39,8 @@ function ProjectDetailPage() {
       </div>
 
       {project.softSkills && <SoftSkills softSkills={ project.softSkills }/>}
-      <Learnings learnings={project.learnings}/>
+      {project.learnings && <Learnings learnings={project.learnings}/>}
+      {project.nextSteps && <NextSteps nextSteps={project.nextSteps}/>}
       <Links {...project.links}/>
 
       {/* Desafíos & soluciones

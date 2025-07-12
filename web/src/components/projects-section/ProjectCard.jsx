@@ -3,7 +3,7 @@ import MacMockup from '../mac-mockup/MacMockup';
 import getTechnologiesByName from '../../lib/getTechnologiesByName';
 import { Link } from 'react-router-dom';
 
-function ProjectCard({name, architecture, description, image, index, technologies}) {
+function ProjectCard({name, architecture, id, description, image, index, technologies}) {
   const isOdd = index % 2 !==0;
   const technologyObjects = getTechnologiesByName(technologies)
 
@@ -19,7 +19,7 @@ function ProjectCard({name, architecture, description, image, index, technologie
           <SplashIcon key={index} {...tech} height={'h-15 md:h-20'}/>
         ))}         
         </div>
-        <Link to="/projects" className='button'>Más info<span className='visually hidden'>sobre el proyecto {name}</span></Link>
+        <Link to={`/projects/${id}`} className='button'>Más info<span className='visually hidden'>sobre el proyecto {name}</span></Link>
       </article>
     </div>
     

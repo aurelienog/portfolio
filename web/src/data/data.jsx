@@ -37,7 +37,7 @@ import greySplash from '../assets/images/greySplash.webp';
 
 
 export const projects = [{
-  id: 1,
+  id: '1',
   name: "ANJ Renov",
   architecture: "SSR con Next.Js y hosting en Vercel",
   description: <>Sitio web de ANJ Renov, una empresa familiar especializada en pintura y reformas en Francia. El sitio fue diseñado para ofrecer una experiencia rápida y accesible, con un enfoque en la optimización SEO. Su objetivo es destacar los servicios ofrecidos y transmitir la profesionalidad, cercanía y trayectoria de la empresa.</>,
@@ -49,17 +49,28 @@ export const projects = [{
     answer: 'Mostrar sus servicios, diferenciarse de la competencia y generar confianza para captar clientes.'
   }, {
     question: '¿Por qué lo hice?',
-    answer: 'Proyecto real para un cliente (ANJ Renov). Me ocupé del diseño, desarrollo, contenido y despliegue. El objetivo era lograr una web que transmitiera profesionalismo, calidad artesanal y buena UX.'
+    answer: 'Proyecto real: me encargué del diseño, desarrollo, contenido y despliegue. El objetivo era lograr una web que transmitiera profesionalismo y calidad artesanal.'
   }, ],
   image: anjImg,
   technologies:['Next.js', 'TypeScript','Css', 'framer motion', 'vercel'],
   learnings:[
-    <>How to <b className='highlight'>structure</b> a modern Next.js 15 project using the App Router and Server Actions</>, 
-    <>Implementing best practices for SSR</>,
-    <>lazy loading (Suspense, next/dynamic) and code splitting</>, 
-    <>Enhancing accessibility through semantic HTML</>,
-    <>color contrast, descriptive alt text and full keyboard (Tab) navigation support</>,
-    <>Deploying a production-ready app on Vercel and debugging common deployment issues</>],
+    <>Cómo aplicar renderizado en servidor (SSR) y carga diferida (lazy loading) para equilibrar SEO, rendimiento y experiencia de usuario.</>, 
+    <>La importancia de los detalles en UX: navegación con teclado (tab index), textos alternativos (alt text), estructura semántica y formularios accesibles con validación</>,
+    <>Cómo construir contenido persuasivo aplicando técnicas como:
+      <ul className='space-y-2'>
+        <li className='list-[square] ml-4'>Prueba social (fotos de proyectos reales, cifras y estadísticas)</li>
+        <li className='list-[square] ml-4'>Jerarquía visual para guiar la atención del usuario</li>
+        <li className='list-[square] ml-4'>Navegación impulsada por llamados a la acción (CTAs)</li>
+        <li className='list-[square] ml-4'>Uso de storytelling para transmitir valor y generar confianza</li>
+      </ul>
+    </>],
+  nextSteps: [
+    <>Testimonios – Agregar prueba social directa y confiable.</>,
+    <>Modo oscuro automático – Adaptado a la preferencia del usuario (`prefers-color-scheme`).</>,
+    <>Integrar un CMS (Sanity o Contentful) para facilitar la edición de contenido.</>,
+    <>Mejoras móviles – Soporte de gestos (ej: swipe en la galería), animaciones suaves.</>,
+    <>Protección contra spam – Implementar reCAPTCHA invisible o técnica honeypot.</>
+  ],
   features: [
     'Server-side rendering (Next.js 15)',
     'SEO optimizado (meta tags, Lighthouse 100%)',
@@ -74,23 +85,23 @@ export const projects = [{
       github: 'https://github.com/aurelienog/renov',
       live: 'https://renov-three.vercel.app/'
     },
-  softSkills: [<>Diseño UX centrado en el usuario</>, <>Redacción clara y persuasiva</>, <>Pensamiento estratégico (enfocado a conversión y confianza)</>, <>Accesibilidad real y ética</>, <>Capacidad para manejar un proyecto completo: diseño, frontend, backend, deploy y SEO</>]
+  softSkills: [<>Diseño UX centrado en el usuario</>, <>Redacción clara y persuasiva (copywriting funcional)</>, <>Pensamiento estratégico (enfocado a conversión y confianza)</>, <>Accesibilidad real y ética</>, <>Capacidad para manejar un proyecto completo: diseño, frontend, backend, deploy y SEO</>]
 }, {
-  id: 2,
+  id: '2',
   name: "Página de Adopción de Mascotas",
   architecture: "SPA con React",
   description: <>Tras desarrollar la primera versión de Fur-Ever Friends con server-side rendering (HBS), decidí modernizar la plataforma creando una <b>Single Page Application (SPA)</b> con React, optimizando la experiencia del usuario con una navegación más fluida y rápida.</>,
   image: reactShelter,
   technologies:['MongoDb', 'Express','React', 'Node.js', 'Tailwindcss']
 }, {
-  id: 3,
+  id: '3',
   name:"Shooter 2D",
   architecture:"JavaScript y Canvas",
   description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b>un desafío progresivo</b> y dinámico.</>,
   image:grimm,
   technologies:['Html', 'Css', 'Javascript']
 }, {
-    id: 4,
+    id: '4',
     name:"Página de Adopción de Mascotas",
     architecture: "SSR con handlebars",
     description: <>Fur-Ever Friends es un refugio de animales dedicado a encontrar hogares amorosos para mascotas. La web permite a los usuarios explorar animales en adopción, completar solicitudes y gestionar sus perfiles de manera sencilla e intuitiva.</>,

@@ -1,9 +1,9 @@
-function Learnings({ learnings }) {
+function NextSteps({ nextSteps }) {
   return (
     <section>
-      <h2>Aprendizajes clave</h2>
+      <h2>Próximos pasos:</h2>
       <ul className="space-y-2">
-        {learnings?.map((p, index) => (     
+        {nextSteps?.map((p, index) => (     
         <li key={index} className="list-disc pl-2 text-gray-700">{p}</li>
         ))}
       </ul>
@@ -11,4 +11,4 @@ function Learnings({ learnings }) {
   )
 }
 
-export default Learnings
+export default NextSteps
