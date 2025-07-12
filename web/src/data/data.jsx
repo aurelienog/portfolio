@@ -85,7 +85,6 @@ export const projects = [{
       github: 'https://github.com/aurelienog/renov',
       live: 'https://renov-three.vercel.app/'
     },
-  softSkills: [<>Diseño UX centrado en el usuario</>, <>Redacción clara y persuasiva (copywriting funcional)</>, <>Pensamiento estratégico (enfocado a conversión y confianza)</>, <>Accesibilidad real y ética</>, <>Capacidad para manejar un proyecto completo: diseño, frontend, backend, deploy y SEO</>]
 }, {
   id: '2',
   name: "Página de Adopción de Mascotas",
