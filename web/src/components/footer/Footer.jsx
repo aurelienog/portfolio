@@ -10,11 +10,11 @@ function Footer() {
       background: "radial-gradient(150% 85% at 50% 1%, transparent 30%, rgb(255, 160, 146) 120%)",
     }}>
 
-      <ul className='grid justify-center text-center my-8 font-sans text-2xl'>
-        <li><Link to='/' className='animated-underline outline-0 focus:text-accent '>Top</Link></li>
-        <li><Link to="/about" className='animated-underline outline-0 focus:text-accent '>Sobre Mí</Link></li>
-        <li><Link to="/projects" className='animated-underline outline-0 focus:text-accent '>Mis proyectos</Link></li>
-        <li><Link to="/#contact" className='animated-underline outline-0 focus:text-accent '>Contáctame</Link></li>
+      <ul className='grid justify-center text-center my-8 font-sans text-2xl  md:[&:has(.links:hover)_.links:not(:hover)]:opacity-50'>
+        <li className='links'><Link to='/' className='animated-underline outline-0 focus:text-accent '>Top</Link></li>
+        <li className='links'><Link to="/about" className='animated-underline outline-0 focus:text-accent '>Sobre Mí</Link></li>
+        <li className='links'><Link to="/projects" className='animated-underline outline-0 focus:text-accent '>Mis proyectos</Link></li>
+        <li className='links'><Link to="/#contact" className='animated-underline outline-0 focus:text-accent '>Contáctame</Link></li>
       </ul>
       <ul className='flex justify-center gap-6 w-[80%] mx-auto '>
         <li><NeonIcon icon={Github} url="https://github.com/aurelienog" aria={'Github'}/></li>

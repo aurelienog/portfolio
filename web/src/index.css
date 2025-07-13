@@ -157,8 +157,7 @@
     }
   }
 
-  nav ul:hover li:not(:hover), 
-  footer ul:hover li:not(:hover) {
+  nav ul:hover li:not(:hover) {
     opacity: 0.5;
   }
 

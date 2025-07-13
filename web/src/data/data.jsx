@@ -42,56 +42,63 @@ export const projects = [{
   architecture: "SSR con Next.Js y hosting en Vercel",
   description: <>Sitio web de ANJ Renov, una empresa familiar especializada en pintura y reformas en Francia. El sitio fue diseñado para ofrecer una experiencia rápida y accesible, con un enfoque en la optimización SEO. Su objetivo es destacar los servicios ofrecidos y transmitir la profesionalidad, cercanía y trayectoria de la empresa.</>,
   overview: [{
-    question: '¿Qué es?',
-    answer: 'Un sitio web corporativo para una empresa de reformas francesa.'
-  }, {
-    question: '¿Para qué sirve?',
-    answer: 'Mostrar sus servicios, diferenciarse de la competencia y generar confianza para captar clientes.'
-  }, {
-    question: '¿Por qué lo hice?',
-    answer: 'Proyecto real: me encargué del diseño, desarrollo, contenido y despliegue. El objetivo era lograr una web que transmitiera profesionalismo y calidad artesanal.'
-  }, ],
+      question: '¿Qué es?',
+      answer: 'Un sitio web corporativo para una empresa de reformas francesa.'
+    }, {
+      question: '¿Para qué sirve?',
+      answer: 'Mostrar sus servicios, diferenciarse de la competencia y generar confianza para captar clientes.'
+    }, {
+      question: '¿Por qué lo hice?',
+      answer: 'Proyecto real: me encargué del diseño, desarrollo, contenido y despliegue. El objetivo era lograr una web que transmitiera profesionalismo y calidad artesanal.'
+    },
+  ],
   image: anjImg,
+  features: [
+    <><b>Server-side rendering</b> (Next.js 15)</>,
+    <><b>SEO optimizado</b> : meta tags, Lighthouse 100%</>,
+    <><b>Accesibilidad</b> : HTML semantico, teclado, contraste, ARIA</>,
+    <><b>Animaciones con Framer Motion </b> : contadores, parallax, efectos reveal...</>,
+    <><b>Galería de imágenes</b> con carga diferida (lazy loading)</>,
+    <><b>Tabla comparativa </b> : artesano vs. multinacional vs. low cost</>,
+    <><b>Slider interactivo</b> para comparar imágenes “antes / después”</>,
+    <><b>Formulario de contacto</b> con validación (cliente + servidor) y mensajes de error'</>,
+  ],
   technologies:['Next.js', 'TypeScript','Css', 'framer motion', 'vercel'],
   learnings:[
-    <>Cómo aplicar renderizado en servidor (SSR) y carga diferida (lazy loading) para equilibrar SEO, rendimiento y experiencia de usuario.</>, 
-    <>La importancia de los detalles en UX: navegación con teclado (tab index), textos alternativos (alt text), estructura semántica y formularios accesibles con validación</>,
-    <>Cómo construir contenido persuasivo aplicando técnicas como:
-      <ul className='space-y-2'>
-        <li className='list-[square] ml-4'>Prueba social (fotos de proyectos reales, cifras y estadísticas)</li>
-        <li className='list-[square] ml-4'>Jerarquía visual para guiar la atención del usuario</li>
-        <li className='list-[square] ml-4'>Navegación impulsada por llamados a la acción (CTAs)</li>
-        <li className='list-[square] ml-4'>Uso de storytelling para transmitir valor y generar confianza</li>
+    <><b>Manejar un proyecto completo</b>: diseño, frontend, backend y deploy</>,
+    <><b>Aplicar renderizado en servidor (SSR) y carga diferida (lazy loading) </b>para equilibrar SEO, rendimiento y experiencia de usuario.</>, 
+    <><b>Importancia de los detalles en UX</b>: navegación con teclado (tab index), textos alternativos (alt text), estructura semántica y formularios accesibles con validación</>,
+    <><b>Construir contenido persuasivo </b>aplicando técnicas como:
+      <ul className='space-y-2 list-disc marker:text-gray-700 ml-6'>
+        <li className='mt-2'>Prueba social (fotos de proyectos reales, cifras y estadísticas)</li>
+        <li>Jerarquía visual para guiar la atención del usuario</li>
+        <li>Navegación impulsada por llamados a la acción (CTAs)</li>
+        <li>Uso de storytelling para transmitir valor y generar confianza</li>
       </ul>
-    </>],
+    </>,
+    ],
   nextSteps: [
-    <>Testimonios – Agregar prueba social directa y confiable.</>,
-    <>Modo oscuro automático – Adaptado a la preferencia del usuario (`prefers-color-scheme`).</>,
-    <>Integrar un CMS (Sanity o Contentful) para facilitar la edición de contenido.</>,
-    <>Mejoras móviles – Soporte de gestos (ej: swipe en la galería), animaciones suaves.</>,
-    <>Protección contra spam – Implementar reCAPTCHA invisible o técnica honeypot.</>
+    <><b className='ml-2'>Testimonios</b> – Agregar prueba social directa y confiable.</>,
+    <><b className='ml-2'>Modo oscuro automático</b> – Adaptado a la preferencia del usuario (`prefers-color-scheme`).</>,
+    <><b className='ml-2'>Integrar un CMS </b>(Sanity o Contentful) para facilitar la edición de contenido.</>,
+    <><b className='ml-2'>Mejoras móviles</b> – Soporte de gestos (ej: swipe en la galería), animaciones suaves.</>,
+    <><b className='ml-2'>Protección contra spam</b> – Implementar reCAPTCHA invisible o técnica honeypot.</>,
   ],
-  features: [
-    'Server-side rendering (Next.js 15)',
-    'SEO optimizado (meta tags, Lighthouse 100%)',
-    'Accesibilidad real(HTML semantico, teclado, contraste, ARIA)',
-    'Diseño responsive y elegante',
-    'Animaciones con Framer Motion (contadores, parallax, efectos reveal)',
-    'Galería de imágenes con carga diferida (lazy loading)',
-    'Tabla comparativa (artesano vs. multinacional vs. low cost)',
-    'Slider interactivo para comparar imágenes “antes / después”',
-    'Formulario de contacto con validación (cliente + servidor) y mensajes de error'],
-    links: {
-      github: 'https://github.com/aurelienog/renov',
-      live: 'https://renov-three.vercel.app/'
-    },
+  links: {
+    github: 'https://github.com/aurelienog/renov',
+    live: 'https://renov-three.vercel.app/',
+  },
 }, {
   id: '2',
   name: "Página de Adopción de Mascotas",
   architecture: "SPA con React",
   description: <>Tras desarrollar la primera versión de Fur-Ever Friends con server-side rendering (HBS), decidí modernizar la plataforma creando una <b>Single Page Application (SPA)</b> con React, optimizando la experiencia del usuario con una navegación más fluida y rápida.</>,
   image: reactShelter,
-  technologies:['MongoDb', 'Express','React', 'Node.js', 'Tailwindcss']
+  technologies:['MongoDb', 'Express','React', 'Node.js', 'Tailwindcss'],
+  features: [
+    'Diseño responsive y elegante',
+    'Formulario de contacto con validación (cliente + servidor) y mensajes de error'
+  ]
 }, {
   id: '3',
   name:"Shooter 2D",

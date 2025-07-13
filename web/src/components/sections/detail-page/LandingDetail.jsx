@@ -3,7 +3,7 @@ function LandingDetail({ name, image }) {
     <section>
       <h1>{name}</h1>
       <figure>
-        <img src={image} alt="" />
+        <img src={image} alt="" className="rounded-(--border-radius)"/>
       </figure>
     </section>
   )

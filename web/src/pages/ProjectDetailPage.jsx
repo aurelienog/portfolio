@@ -31,12 +31,8 @@ function ProjectDetailPage() {
     <main>
       <LandingDetail {...project}/>
       { project.overview && <Overview overview={project.overview}/>}
-
-      <div className="grid gap-6 md:grid-cols-[3fr_2fr] mb-44 md:mb-0">
-        <Features features={project.features}/>
-        <TechStack technologies={project.technologies}/>
-      </div>
-
+      <Features features={project.features}/>
+      <TechStack technologies={project.technologies}/>
       {project.learnings && <Learnings learnings={project.learnings}/>}
       {project.nextSteps && <NextSteps nextSteps={project.nextSteps}/>}
       <Links {...project.links}/>

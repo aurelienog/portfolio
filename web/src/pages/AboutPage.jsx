@@ -13,8 +13,8 @@ function AboutPage() {
         </article>
       </section>
 
-      <figure className="mb-20">
-          <img src={workingImg} alt="" className="mx-auto rounded-[var(--border-radius)]"/>
+      <figure className="mb-20 max-w-3xl mx-auto">
+          <img src={workingImg} alt="" className="w-full rounded-[var(--border-radius)]"/>
       </figure>
 
       <section className="max-w-3xl mx-auto">
