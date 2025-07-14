@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { projects } from "../data/data";
+
+// sections
 import LandingDetail from '../components/sections/detail-page/LandingDetail';
 import Overview from '../components/sections/detail-page/Overview';
 import Features from "../components/sections/detail-page/Features";
@@ -8,9 +9,8 @@ import TechStack from "../components/sections/detail-page/TechStack";
 import Learnings from "../components/sections/detail-page/Learnings";
 import NextSteps from "../components/sections/detail-page/NextSteps";
 import Links from "../components/sections/detail-page/Links";
-import image from '../assets/images/ANJ-Home.webp';
 
-function ProjectDetailPage() {
+function ProjectDetailPage({ projects } ) {
   const [project, setProject] = useState(null);
   const { id } = useParams();
 
@@ -43,12 +43,11 @@ function ProjectDetailPage() {
       <div className="scroll-layout">
         <div className="carousel">
         <ul className="content">
-          <li><img src={image} alt="" className="h-full w-full object-cover"/></li>
-          <li><img src={image} alt="" className="h-full w-full object-cover"/></li>
-          <li><img src={image} alt="" className="h-full w-full object-cover"/></li>
-          <li><img src={image} alt="" className="h-full w-full object-cover"/></li>
-          <li><img src={image} alt="" className="h-full w-full object-cover"/></li>
-        </ul>
+          {project.images.map((image, index) => ( 
+          <li key={`screenshots-${project.id}-${index}`}>
+            <img src={image} alt="" className="h-full w-full object-cover"/>
+          </li>))}
+        </ul> 
         </div>
         </div>
       </section>

@@ -387,12 +387,12 @@
     }
     
     &::scroll-marker:is(:hover, :focus-visible) {
-      border-color: LinkText;
+      border-color: var(--color-accent);
     }
     
     &::scroll-marker:target-current {
-      background: LinkText;
-      border-color: LinkText;
+      background: var(--color-accent);
+      border-color: var(--color-accent);
     }
   }
 }

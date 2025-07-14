@@ -1,7 +1,6 @@
 import Gallery from '../components/gallery/Gallery';
-import { projects } from '../data/data'
 
-function ProjectsPage() {
+function ProjectsPage({ projects }) {
   return (
       <main>
         <section>

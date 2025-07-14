@@ -2,7 +2,13 @@
 import shelterExpress from '../assets/images/shelterExpress.webp';
 import reactShelter from '../assets/images/reactShelter.webp';
 import grimm from '../assets/images/grimm.webp';
-import anjImg from '../assets/images/ANJ-Home.webp';
+import anjHome from '../assets/screenshots/anj-home.webp';
+import anjSlider from '../assets/screenshots/anj-slider.webp';
+import anjTable from '../assets/screenshots/anj-table.webp';
+import anjServices from '../assets/screenshots/anj-services.webp';
+import anjGallery from '../assets/screenshots/anj-gallery.webp';
+import anjPath from '../assets/screenshots/anj-animated-path.webp';
+
 
 // icons
 import expressIcon from '../assets/icons/express.svg';
@@ -52,7 +58,7 @@ export const projects = [{
       answer: 'Proyecto real: me encargué del diseño, desarrollo, contenido y despliegue. El objetivo era lograr una web que transmitiera profesionalismo y calidad artesanal.'
     },
   ],
-  image: anjImg,
+  images: [anjHome,  anjGallery, anjPath, anjServices, anjTable, anjSlider],
   features: [
     <><b>Server-side rendering</b> (Next.js 15)</>,
     <><b>SEO optimizado</b> : meta tags, Lighthouse 100%</>,
@@ -93,7 +99,7 @@ export const projects = [{
   name: "Página de Adopción de Mascotas",
   architecture: "SPA con React",
   description: <>Tras desarrollar la primera versión de Fur-Ever Friends con server-side rendering (HBS), decidí modernizar la plataforma creando una <b>Single Page Application (SPA)</b> con React, optimizando la experiencia del usuario con una navegación más fluida y rápida.</>,
-  image: reactShelter,
+  images: [reactShelter],
   technologies:['MongoDb', 'Express','React', 'Node.js', 'Tailwindcss'],
   features: [
     'Diseño responsive y elegante',
@@ -104,14 +110,14 @@ export const projects = [{
   name:"Shooter 2D",
   architecture:"JavaScript y Canvas",
   description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b>un desafío progresivo</b> y dinámico.</>,
-  image:grimm,
+  images:[grimm],
   technologies:['Html', 'Css', 'Javascript']
 }, {
     id: '4',
     name:"Página de Adopción de Mascotas",
     architecture: "SSR con handlebars",
     description: <>Fur-Ever Friends es un refugio de animales dedicado a encontrar hogares amorosos para mascotas. La web permite a los usuarios explorar animales en adopción, completar solicitudes y gestionar sus perfiles de manera sencilla e intuitiva.</>,
-    image: shelterExpress,
+    images: [shelterExpress],
     technologies: ['MongoDb', 'Express','Handlebars', 'Node.js', 'Tailwindcss']
 }]
 

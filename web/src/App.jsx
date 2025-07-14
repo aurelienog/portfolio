@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
+import { projects } from "./data/data";
 import StickyHeader from "./components/sticky-header/StickyHeader"
 import Navbar from "./components/navbar/Navbar"
 import HomePage from "./pages/HomePage"
@@ -18,10 +19,10 @@ function App() {
           <Navbar/>
         </StickyHeader>  
         <Routes>
-          <Route path="/home?" element={<HomePage/>}/>
+          <Route path="/home?" element={<HomePage projects={projects}/> }/>
           <Route path="/about" element={<AboutPage/>}/>
-          <Route path="/projects" element={<ProjectsPage/>}/>
-          <Route path="/projects/:id" element={<ProjectDetailPage/>}/>
+          <Route path="/projects" element={<ProjectsPage projects={projects}/>}/>
+          <Route path="/projects/:id" element={<ProjectDetailPage projects={projects}/>}/>
         </Routes>
         <Footer/>
       </GradientLayout>

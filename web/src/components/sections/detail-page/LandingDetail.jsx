@@ -1,9 +1,9 @@
-function LandingDetail({ name, image }) {
+function LandingDetail({ name, images }) {
   return (
     <section>
       <h1>{name}</h1>
       <figure>
-        <img src={image} alt="" className="rounded-(--border-radius)"/>
+        <img src={images[0]} alt="" className="rounded-(--border-radius)"/>
       </figure>
     </section>
   )
