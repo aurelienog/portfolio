@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function HeroSection() {
   return (
     <section id='hero' className='lg:grid grid-cols-2 pt-10 items-center'>
-      <figure className='md:order-1 mx-8 mb-14 md:mb-0 relative'>
+      <figure className='md:order-1 mx-8 mb-14 md:mb-0 relative h-auto aspect-square'>
         <SplashBackground image={meImg}/>
         <img src={extraSplash} alt="" className='hidden md:block absolute w-32 -bottom-48 right-12 starting:opacity-0 transition-opacity delay-600 duration-700 ease-in-out opacity-100 [aria-hidden:"true"]'/>
       </figure>

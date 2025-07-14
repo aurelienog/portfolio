@@ -8,6 +8,7 @@ import TechStack from "../components/sections/detail-page/TechStack";
 import Learnings from "../components/sections/detail-page/Learnings";
 import NextSteps from "../components/sections/detail-page/NextSteps";
 import Links from "../components/sections/detail-page/Links";
+import image from '../assets/images/ANJ-Home.webp';
 
 function ProjectDetailPage() {
   const [project, setProject] = useState(null);
@@ -35,7 +36,24 @@ function ProjectDetailPage() {
       <TechStack technologies={project.technologies}/>
       {project.learnings && <Learnings learnings={project.learnings}/>}
       {project.nextSteps && <NextSteps nextSteps={project.nextSteps}/>}
-      <Links {...project.links}/>
+
+      <section>
+        <h2 className="">Screenshots</h2>
+
+      <div className="scroll-layout">
+        <div className="carousel">
+        <ul className="content">
+          <li><img src={image} alt="" className="h-full w-full object-cover"/></li>
+          <li><img src={image} alt="" className="h-full w-full object-cover"/></li>
+          <li><img src={image} alt="" className="h-full w-full object-cover"/></li>
+          <li><img src={image} alt="" className="h-full w-full object-cover"/></li>
+          <li><img src={image} alt="" className="h-full w-full object-cover"/></li>
+        </ul>
+        </div>
+        </div>
+      </section>
+      
+        <Links {...project.links}/>  
 
       {/* Desafíos & soluciones
       {/* Capturas / Galería (slider) */}
