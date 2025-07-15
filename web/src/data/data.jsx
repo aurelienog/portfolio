@@ -1,7 +1,13 @@
 //screenshots
-import shelterExpress from '../assets/images/shelterExpress.webp';
-import reactShelter from '../assets/images/reactShelter.webp';
-import grimm from '../assets/images/grimm.webp';
+import shelterExpress from '../assets/screenshots/express-testimonials.webp';
+import reactShelter from '../assets/screenshots/shelter-home.webp';
+import expressLogin from '../assets/screenshots/express-login.webp';
+import grimm from '../assets/screenshots/grimm.webp';
+import grimmSmall from '../assets/screenshots/grimm-small.webp';
+import grimmJump from '../assets/screenshots/grimm-jump.webp';
+import grimmFly from '../assets/screenshots/grimm-fly.webp';
+import grimmShoot from '../assets/screenshots/grimm-shoot.webp';
+import grimmEnd from '../assets/screenshots/grimm-end.webp';
 import anjHome from '../assets/screenshots/anj-home.webp';
 import anjSlider from '../assets/screenshots/anj-slider.webp';
 import anjTable from '../assets/screenshots/anj-table.webp';
@@ -110,14 +116,14 @@ export const projects = [{
   name:"Shooter 2D",
   architecture:"JavaScript y Canvas",
   description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b>un desafío progresivo</b> y dinámico.</>,
-  images:[grimm],
+  images:[grimm, grimmSmall, grimmJump, grimmFly, grimmShoot, grimmEnd],
   technologies:['Html', 'Css', 'Javascript']
 }, {
     id: '4',
     name:"Página de Adopción de Mascotas",
     architecture: "SSR con handlebars",
     description: <>Fur-Ever Friends es un refugio de animales dedicado a encontrar hogares amorosos para mascotas. La web permite a los usuarios explorar animales en adopción, completar solicitudes y gestionar sus perfiles de manera sencilla e intuitiva.</>,
-    images: [shelterExpress],
+    images: [shelterExpress, expressLogin],
     technologies: ['MongoDb', 'Express','Handlebars', 'Node.js', 'Tailwindcss']
 }]
 

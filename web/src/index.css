@@ -297,7 +297,7 @@
   
   /* snap to center */  
   & li {
-    scroll-snap-align: center;
+    scroll-snap-align: start;
   }
 }
 
@@ -424,7 +424,7 @@
 
   .content {
     display: grid;
-    grid: 60vmin / auto-flow 100vmin;
+    grid: 50vmin / auto-flow 100vmin;
     gap: 15px;
     padding: 0;
     margin: 0;

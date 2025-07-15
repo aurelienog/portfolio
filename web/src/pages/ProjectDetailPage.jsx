@@ -17,7 +17,7 @@ function ProjectDetailPage({ projects } ) {
   useEffect(() => {
     const foundProject = projects.find((p) => String(p.id) === String(id));
     setProject(foundProject);
-  }, [id]);
+  }, [id, projects]);
 
 
   if (!project) {
