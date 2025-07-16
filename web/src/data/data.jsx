@@ -14,7 +14,9 @@ import anjTable from '../assets/screenshots/anj-table.webp';
 import anjServices from '../assets/screenshots/anj-services.webp';
 import anjGallery from '../assets/screenshots/anj-gallery.webp';
 import anjPath from '../assets/screenshots/anj-animated-path.webp';
-
+import laptopAnj from '../assets/images/laptopAnj.webp';
+import mobileAnj from '../assets/images/mobileAnj.webp';
+import ipadAnj from '../assets/images/ipadAnj.webp';
 
 // icons
 import expressIcon from '../assets/icons/express.svg';
@@ -52,7 +54,7 @@ export const projects = [{
   id: '1',
   name: "ANJ Renov",
   architecture: "SSR con Next.Js y hosting en Vercel",
-  description: <>Sitio web de ANJ Renov, una empresa familiar especializada en pintura y reformas en Francia. El sitio fue diseñado para ofrecer una experiencia rápida y accesible, con un enfoque en la optimización SEO. Su objetivo es destacar los servicios ofrecidos y transmitir la profesionalidad, cercanía y trayectoria de la empresa.</>,
+  description: <>Sitio web de ANJ Renov, una empresa familiar especializada en pintura y reformas en Francia. El sitio fue diseñado para ofrecer una <b className='highlight'>experiencia rápida y accesible</b>, con un enfoque en la optimización SEO. Su objetivo es destacar los servicios ofrecidos y transmitir la profesionalidad, cercanía y trayectoria de la empresa.</>,
   overview: [{
       question: '¿Qué es?',
       answer: 'Un sitio web corporativo para una empresa de reformas francesa.'
@@ -65,6 +67,7 @@ export const projects = [{
     },
   ],
   images: [anjHome,  anjGallery, anjPath, anjServices, anjTable, anjSlider],
+  mockup: [laptopAnj, ipadAnj, mobileAnj],
   features: [
     <><b>Server-side rendering</b> (Next.js 15)</>,
     <><b>SEO optimizado</b> : meta tags, Lighthouse 100%</>,
@@ -104,7 +107,7 @@ export const projects = [{
   id: '2',
   name: "Página de Adopción de Mascotas",
   architecture: "SPA con React",
-  description: <>Tras desarrollar la primera versión de Fur-Ever Friends con server-side rendering (HBS), decidí modernizar la plataforma creando una <b>Single Page Application (SPA)</b> con React, optimizando la experiencia del usuario con una navegación más fluida y rápida.</>,
+  description: <>Tras desarrollar la primera versión de Fur-Ever Friends con server-side rendering (HBS), decidí modernizar la plataforma creando una <b className='highlight'>Single Page Application (SPA)</b> con React, optimizando la experiencia del usuario con una navegación más fluida y rápida.</>,
   images: [reactShelter],
   technologies:['MongoDb', 'Express','React', 'Node.js', 'Tailwindcss'],
   features: [
@@ -115,7 +118,7 @@ export const projects = [{
   id: '3',
   name:"Shooter 2D",
   architecture:"JavaScript y Canvas",
-  description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b>un desafío progresivo</b> y dinámico.</>,
+  description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b className='highlight'>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b className='highlight'>un desafío progresivo</b> y dinámico.</>,
   images:[grimm, grimmSmall, grimmJump, grimmFly, grimmShoot, grimmEnd],
   technologies:['Html', 'Css', 'Javascript']
 }, {

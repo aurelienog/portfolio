@@ -10,7 +10,7 @@ function GalleryCard({ name, architecture, technologies, description, image }) {
         <img src={image} alt="" className="rounded-[1.5rem_1.5rem_0_0] block w-full aspect-video object-cover object-center" />
       </figure>  
       <h2 className="text-2xl pb-0 pt-6 p-4 mb-0">{name}</h2>
-      <p className="px-4 mb-3 text-xl font-sans">{architecture}</p>
+      <h3 className="px-4 mb-3 text-xl font-sans text-text">{architecture}</h3>
       <p className="px-4 pt-2 text-sm h-auto [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3] overflow-hidden overflow-ellipsis">{description}</p>
       <div className='p-4 flex flex-wrap justify-center md:justify-start w-full'>
         {technologyObjects.map((tech, index) => (

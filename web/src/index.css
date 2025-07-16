@@ -94,9 +94,7 @@
 
   h1, h2, h3, h4, nav {
     font-family: var(--font-sans);
-    color: #15080c;
     text-transform: uppercase;
-    font-weight: 700;
   }
 
   h1 {
@@ -105,14 +103,19 @@
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 8rem;
+    font-weight: 700;
+    color: #15080c;
   }
 
   h2 {
-    @apply text-5xl md:text-6xl mb-14;
+    @apply text-5xl md:text-6xl mb-24;
+    font-weight: 700;
+    color: #15080c;
   }
 
   h3 {
     @apply text-3xl mb-4;
+    color: #15080c;
   }
 
   h4 {
@@ -173,6 +176,11 @@
 
   .grid-auto-fit {
     --grid-min-column-size: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--grid-min-column-size)), 1fr));
+  }
+
+    .grid-project-section {
+    --grid-min-column-size: 500px;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--grid-min-column-size)), 1fr));
   }
 

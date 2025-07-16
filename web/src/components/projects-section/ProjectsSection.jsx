@@ -9,7 +9,7 @@ function ProjectsSection({ projects }) {
     <section>
       <h2>Mis ultimos proyectos</h2>
       {filteredProjects?.map((project, index) => 
-      <ProjectCard className='' key={`${index}+${project.id}`} index={index} image={project.images[0]} {...project}/>)}
+      <ProjectCard className='' key={`${index}+${project.id}`} index={index} image={project.images[0]} mockup={project.mockup} {...project}/>)}
     </section>
   )
 }
