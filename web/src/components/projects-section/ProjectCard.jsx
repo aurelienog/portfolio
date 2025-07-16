@@ -1,15 +1,17 @@
 import SplashIcon from '../splash-icon/SplashIcon';
-import MacMockup from '../mac-mockup/MacMockup';
+import MacMockup from '../mockup/MacMockup';
+import LaptopMockup from '../mockup/LaptopMockup';
 import getTechnologiesByName from '../../lib/getTechnologiesByName';
 import { Link } from 'react-router-dom';
 
 function ProjectCard({name, architecture, id, description, image, mockup, index, technologies}) {
   const isOdd = index % 2 !==0;
+  const isLast = index === 2;
   const technologyObjects = getTechnologiesByName(technologies)
 
   return (
-    <div className='grid xl:grid-cols-2  xl:gap-24 mt-12'>
-      <MacMockup image={image} mockup={mockup} alt={`Captura de pantalla del proyecto ${name}`} className={` ${isOdd? 'xl:order-last' : 'xl:order-first'}`}/>
+    <div className='grid xl:grid-cols-2 xl:gap-24 mt-24'>
+      { isLast ? <LaptopMockup image={image} alt={`Captura de pantalla del proyecto ${name}`}/> : <MacMockup image={image} mockup={mockup} alt={`Captura de pantalla del proyecto ${name}`} className={` ${isOdd? 'xl:order-last' : 'xl:order-first'}`}/>}
       <article>
         <h3 className='mb-0'>{name}<br></br></h3>
         <h4>{architecture}</h4>
