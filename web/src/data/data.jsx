@@ -159,7 +159,34 @@ export const projects = [{
   architecture:"JavaScript y Canvas",
   description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b className='highlight'>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b className='highlight'>un desafío progresivo</b> y dinámico.</>,
   images:[grimm, grimmSmall, grimmJump, grimmFly, grimmShoot, grimmEnd],
+  overview: [{
+      question: '¿Qué es?',
+      answer: 'Un juego de plataformas en 2D desarrollado desde cero, donde el jugador puede correr, saltar, volar, evolucionar y disparar a enemigos. Todo está implementado en JavaScript puro y renderizado mediante la Canvas API.'
+    }, {
+      question: '¿Por qué lo hice?',
+      answer: <>Este proyecto nació como un desafío personal para:
+        <ul>
+          <li>Mejorar mi dominio de clases en JavaScript.</li>
+          <li>Practicar lógica de programación orientada a objetos.</li>
+          <li>Explorar conceptos clave de desarrollo de juegos: físicas, colisiones, animaciones por sprites y diseño modular.</li>
+        </ul>
+      </>
+    },
+  ],
+  features: [
+    <><b>Movimiento fluido del personaje</b>: correr, saltar, volar</>,
+    <><b>Animaciones por sprites</b>: correr, saltar, volar, atacar</>,
+    <><b>Detección de colisiones</b> con enemigos y disparo de proyectiles</>,
+    <><b>Sistema de evolución</b></>,
+    <><b>Arquitectura escalable basada en clases</b>: Player, Enemy, Munition, Item...</>
+  ],
   technologies:['Html', 'Css', 'Javascript'],
+  learnings:[
+    <><b>Cómo estructurar un juego</b> desde cero con Canvas API.</>,
+    <><b>Uso de clases y herencia</b> para organizar el código de forma escalable y mantenible.</>,
+    <><b>Animaciones de sprites</b> sincronizadas con el estado del jugador</>, 
+    <><b>Gestión de colisiones complejas</b>: personaje vs. enemigos, balas vs. enemigos/player</>,
+  ],
   links: {
     github: 'https://github.com/aurelienog/Game-canvas',
   },
