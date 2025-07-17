@@ -4,7 +4,7 @@ function MacMockup({ image, alt, className, mockup}) {
   return (
     <div className={`${className} aspect-square w-full max-w-xl m-auto`}>
       <figure className='w-full aspect-[4/3] relative'>
-        <div className={` relative ${mockup? 'w-[75%] left-[12%] top-[10%]' : 'w-full mx-auto'}`}>
+        <div className={` relative ${mockup? 'w-[75%] left-[12%] top-[10%]' : 'w-[90%] mx-auto'}`}>
           <img src={mac} alt="" className='w-full h-auto absolute'/>
           <img src={image} alt={alt} className='w-full h-auto p-4 absolute animate-show opacity-0'/>
         </div>

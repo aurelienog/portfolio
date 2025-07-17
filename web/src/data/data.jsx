@@ -108,26 +108,87 @@ export const projects = [{
   name: "Página de Adopción de Mascotas",
   architecture: "SPA con React",
   description: <>Tras desarrollar la primera versión de Fur-Ever Friends con server-side rendering (HBS), decidí modernizar la plataforma creando una <b className='highlight'>Single Page Application (SPA)</b> con React, optimizando la experiencia del usuario con una navegación más fluida y rápida.</>,
+  overview: [{
+      question: '¿Qué es?',
+      answer: 'Una aplicación web desarrollada con stack MERN para gestionar un refugio de animales y facilitar su adopción.'
+    }, {
+      question: '¿Para qué sirve?',
+      answer: 'Permite a usuarios explorar animales disponibles y contactar al refugio. Los administradores pueden gestionar el contenido mediante un panel seguro con autenticación y control de acceso.'
+    }, {
+      question: '¿Por qué lo hice?',
+      answer: 'Este proyecto nació como práctica de backend en Node.js y Express, con un enfoque en sesiones, manejo de imágenes y roles de usuario.'
+    },
+  ],
   images: [reactShelter],
   technologies:['MongoDb', 'Express','React', 'Node.js', 'Tailwindcss'],
   features: [
-    'Diseño responsive y elegante',
-    'Formulario de contacto con validación (cliente + servidor) y mensajes de error'
-  ]
+    <><b>Registro y login</b> de usuarios con sesión (express-session)</>,
+    <><b>Contraseñas cifradas</b> con bcrypt</>,
+    <><b>Gestión de usuarios con roles</b> : admin / usuario regular</>,
+    <><b>Middleware de autorización</b> para restringir rutas de administración</>,
+    <><b>Modelo Animal extendido</b> a Dog, Cat y Other usando herencia con Mongoose</>,
+    <><b>API RESTful</b> con rutas protegida</>,
+    <><b>Gestión robusta de errores en la API</b>:
+      <ul className='space-y-2 list-disc marker:text-gray-700 ml-6'>
+        <li>Middleware centralizado para capturar y responder con mensajes claros y códigos HTTP apropiados</li>
+        <li>Validaciones de Mongoose gestionadas como errores 400</li>
+        <li>Errores de casteo como 404 (por IDs inválidas)</li>
+        <li>Otros errores convertidos a 500 si no se clasifican</li>
+        <li>Mensajes de error estructurados enviados al frontend en formato JSON</li>
+      </ul>
+    </>,
+  ],
+    learnings:[
+    <><b>Implementar autenticación</b> basada en sesiones con cookies seguras</>,
+    <><b>Crear un sistema de roles y rutas protegidas</b> para control de acceso</>, 
+    <><b>Utilizar Multer + Cloudinary</b> para subir y servir imágenes desde el backend</>,
+    <><b>Estructurar el backend de forma modular</b> con modelos extendidos, controladores y middlewares</>,
+    <><b>Validar inputs de forma segura</b> tanto en cliente como en servidor</>,
+    ],
+  nextSteps: [
+    <><b className='ml-2'>Afinar el diseño y la experiencia del usuario</b></>,
+    <><b className='ml-2'>Mejorar la accesibilidad</b>: tabindex, ARIA, alt text dinámico...</>,
+    <><b className='ml-2'>Confirmaciones visuales tras acciones</b>: eliminación, guardado...</>,
+  ],   
+  links: {
+    github: 'https://github.com/aurelienog/react-shelter',
+  },
 }, {
   id: '3',
   name:"Shooter 2D",
   architecture:"JavaScript y Canvas",
   description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b className='highlight'>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b className='highlight'>un desafío progresivo</b> y dinámico.</>,
   images:[grimm, grimmSmall, grimmJump, grimmFly, grimmShoot, grimmEnd],
-  technologies:['Html', 'Css', 'Javascript']
+  technologies:['Html', 'Css', 'Javascript'],
+  links: {
+    github: 'https://github.com/aurelienog/Game-canvas',
+  },
 }, {
     id: '4',
     name:"Página de Adopción de Mascotas",
     architecture: "SSR con handlebars",
     description: <>Fur-Ever Friends es un refugio de animales dedicado a encontrar hogares amorosos para mascotas. La web permite a los usuarios explorar animales en adopción, completar solicitudes y gestionar sus perfiles de manera sencilla e intuitiva.</>,
     images: [shelterExpress, expressLogin],
-    technologies: ['MongoDb', 'Express','Handlebars', 'Node.js', 'Tailwindcss']
+    technologies: ['MongoDb', 'Express','Handlebars', 'Node.js', 'Tailwindcss'],
+    features: [
+      <><b>Registro y login</b> de usuarios con sesión (express-session)</>,
+      <><b>Contraseñas cifradas</b> con bcrypt</>,
+      <><b>Gestión de usuarios con roles</b> : admin / usuario regular</>,
+      <><b>Subida de imágenes</b> con Multer, guardadas en Cloudinary</>,
+      <><b>Página de adopciones con filtros</b> : especie, sexo, edad...</>,
+      <><b>Validación de formularios</b> tanto en el cliente como en el servidor</>,
+      <><b>API RESTful</b> con rutas protegidas para:
+        <ul className='space-y-2 list-disc marker:text-gray-700 ml-6'>
+          <li>Crear, leer, actualizar y eliminar animales (CRUD)</li>
+          <li>Crear y autenticar usuarios</li>
+          <li>Enviar mensajes desde el formulario de contacto</li>
+        </ul>
+      </>,
+      <><b>Gestión robusta de errores </b>en la API</>
+    ],
+    links: {
+    github: 'https://github.com/aurelienog/Shelter-Express',
+  },
 }]
 
 export const illustratedTechnologies = [{

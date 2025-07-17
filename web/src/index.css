@@ -425,14 +425,14 @@
   }
   
   .carousel {
-    max-inline-size: 100cqi;
+    max-inline-size: 80cqi;
     overscroll-behavior-x: contain;
     scroll-behavior: smooth;
   }
 
   .content {
     display: grid;
-    grid: 50vmin / auto-flow 100vmin;
+    grid: 50vmin / auto-flow 80vmin;
     gap: 15px;
     padding: 0;
     margin: 0;
