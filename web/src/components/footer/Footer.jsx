@@ -20,7 +20,7 @@ function Footer() {
         <li><NeonIcon icon={Github} url="https://github.com/aurelienog" aria={'Github'}/></li>
         <li><NeonIcon icon={LinkedIn} url="https://www.linkedin.com/in/aurelie-nogueira" aria={'LinkedIn'} /></li>
       </ul>
-      <p className="text-xs text-center mt-6">&copy; 2025 Aurélie Nogueira. Todos los derechos reservados.</p>
+      <p className="text-xs! text-center mt-6">&copy; 2025 Aurélie Nogueira. Todos los derechos reservados.</p>
     </footer>
   )
 }

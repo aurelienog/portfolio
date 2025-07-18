@@ -157,15 +157,15 @@ export const projects = [{
   id: '3',
   name:"Shooter 2D",
   architecture:"JavaScript y Canvas",
-  description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight, desarrollado con JavaScript y Canvas API. El jugador controla a un <b className='highlight'>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b className='highlight'>un desafío progresivo</b> y dinámico.</>,
+  description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight. El jugador controla a un <b className='highlight'>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b className='highlight'>un desafío progresivo</b> y dinámico.</>,
   images:[grimm, grimmSmall, grimmJump, grimmFly, grimmShoot, grimmEnd],
   overview: [{
       question: '¿Qué es?',
-      answer: 'Un juego de plataformas en 2D desarrollado desde cero, donde el jugador puede correr, saltar, volar, evolucionar y disparar a enemigos. Todo está implementado en JavaScript puro y renderizado mediante la Canvas API.'
+      answer: 'Un juego de plataformas en 2D desarrollado en JavaScript y renderizado mediante la Canvas API.'
     }, {
       question: '¿Por qué lo hice?',
       answer: <>Este proyecto nació como un desafío personal para:
-        <ul>
+        <ul className='space-y-2 list-disc marker:text-gray-700 ml-6'>
           <li>Mejorar mi dominio de clases en JavaScript.</li>
           <li>Practicar lógica de programación orientada a objetos.</li>
           <li>Explorar conceptos clave de desarrollo de juegos: físicas, colisiones, animaciones por sprites y diseño modular.</li>

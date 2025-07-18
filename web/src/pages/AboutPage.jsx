@@ -4,7 +4,7 @@ import workingImg from '../assets/images/working.jpg';
 function AboutPage() {
   return (
       <main> 
-      <h1 className='text-5xl md:text-8xl'>Mi viaje hacia la programación</h1>     
+      <h1>Mi viaje hacia la programación</h1>     
       <section className="mb-20 max-w-3xl mx-auto">
         <article className='space-y-10'>
           <p>Siempre tuve curiosidad por el mundo de la tecnología. En 2024, decidí dar el paso hacia el desarrollo web y me formé a través de un <b className='highlight'>bootcamp</b> basado en el <b className='highlight'>stack MERN</b>.</p>

@@ -8,6 +8,7 @@ import Features from "../components/sections/detail-page/Features";
 import TechStack from "../components/sections/detail-page/TechStack";
 import Learnings from "../components/sections/detail-page/Learnings";
 import NextSteps from "../components/sections/detail-page/NextSteps";
+import Screenshots from "../components/sections/detail-page/Screenshots";
 import Links from "../components/sections/detail-page/Links";
 
 function ProjectDetailPage({ projects } ) {
@@ -36,26 +37,10 @@ function ProjectDetailPage({ projects } ) {
       <TechStack technologies={project.technologies}/>
       {project.learnings && <Learnings learnings={project.learnings}/>}
       {project.nextSteps && <NextSteps nextSteps={project.nextSteps}/>}
+      {project.images && <Screenshots images={project.images}/>}
+      <Links {...project.links}/>  
 
-      <section>
-        <h2 className="">Screenshots</h2>
-
-      <div className="scroll-layout">
-        <div className="carousel">
-        <ul className="content">
-          {project.images.map((image, index) => ( 
-          <li key={`screenshots-${project.id}-${index}`}>
-            <img src={image} alt="" className="h-full w-full object-cover"/>
-          </li>))}
-        </ul> 
-        </div>
-        </div>
-      </section>
-      
-        <Links {...project.links}/>  
-
-      {/* Desafíos & soluciones
-      {/* Capturas / Galería (slider) */}
+      {/* Desafíos & soluciones */}
     </main>
   )
 }

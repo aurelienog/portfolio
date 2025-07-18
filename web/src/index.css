@@ -99,11 +99,11 @@
   }
 
   h1 {
-    font-size: 3.75rem;
+    font-size: 3rem;
     margin: auto;
     text-align: center;
     margin-top: 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     font-weight: 700;
     color: #15080c;
     line-height: 1;
@@ -467,8 +467,7 @@
   }
 
   h2 {
-    font-size: 3.75rem;
+    font-size: 4.5rem;
     font-weight: 700;
-    
   }
 }
