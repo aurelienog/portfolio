@@ -66,7 +66,25 @@ export const projects = [{
       answer: 'Proyecto real: me encargué del diseño, desarrollo, contenido y despliegue. El objetivo era lograr una web que transmitiera profesionalismo y calidad artesanal.'
     },
   ],
-  images: [anjHome,  anjGallery, anjPath, anjServices, anjTable, anjSlider],
+  images: [{
+    image: anjHome,
+    description: 'Sección principal del sitio web de ANJ RENOV con eslogan, fondo de cocina moderna y botón para solicitar presupuesto gratuito.'
+    }, {
+      image: anjGallery,
+      description: 'Galería de la página "mis realizaciones" en el sitio de ANJ RENOV, con fotos de trabajos terminados de renovación y pintura.'
+    }, {
+      image: anjPath,
+      description: 'Sección "Le processus" del sitio de ANJ RENOV, con las etapas de una renovación y una línea animada que avanza al hacer scroll.'
+    }, {
+      image: anjServices,
+      description: 'Sección que muestra los distintos servicios de ANJ RENOV, con breve descripción, ilustración y botón para ver ejemplos de realizaciones.'
+    }, {
+      image: anjTable,
+      description: 'Tabla comparativa entre artesano, empresa grande y pintor barato, que muestra fortalezas y debilidades de cada tipo de proveedor de servicios.'
+    }, {
+      image: anjSlider,
+      description: 'Captura de slider comparativo antes y después de la renovación, que permite visualizar los cambios al mover el cursor.'
+    }],
   mockup: [laptopAnj, ipadAnj, mobileAnj],
   features: [
     <><b>Server-side rendering</b> (Next.js 15)</>,
@@ -119,7 +137,10 @@ export const projects = [{
       answer: 'Este proyecto nació como práctica de backend en Node.js y Express, con un enfoque en sesiones, manejo de imágenes y roles de usuario.'
     },
   ],
-  images: [reactShelter],
+  images: [{ 
+    image: reactShelter, 
+    description: 'Sección principal de un refugio de animales con eslogan, botón de llamada a la acción e ilustración de dos chicas riendo junto a un perro.'
+  }],
   technologies:['MongoDb', 'Express','React', 'Node.js', 'Tailwindcss'],
   features: [
     <><b>Registro y login</b> de usuarios con sesión (express-session)</>,
@@ -158,7 +179,25 @@ export const projects = [{
   name:"Shooter 2D",
   architecture:"JavaScript y Canvas",
   description: <>Grimm Gate es un videojuego de plataformas en 2D, inspirado en Hollow Knight. El jugador controla a un <b className='highlight'>personaje que evoluciona</b> a medida que derrota enemigos, mejorando sus habilidades mientras enfrenta <b className='highlight'>un desafío progresivo</b> y dinámico.</>,
-  images:[grimm, grimmSmall, grimmJump, grimmFly, grimmShoot, grimmEnd],
+  images:[{
+    image: grimm,
+    description: ''
+    }, {
+      image: grimmSmall,
+      description: ''
+    }, {
+      image: grimmJump,
+      description: ''
+    }, {
+      image: grimmFly,
+      description: ''
+    }, {
+      image: grimmShoot,
+      description: ''
+    }, {
+      image: grimmEnd,
+      description: ''
+    }],
   overview: [{
       question: '¿Qué es?',
       answer: 'Un juego de plataformas en 2D desarrollado en JavaScript y renderizado mediante la Canvas API.'
@@ -195,7 +234,13 @@ export const projects = [{
     name:"Página de Adopción de Mascotas",
     architecture: "SSR con handlebars",
     description: <>Fur-Ever Friends es un refugio de animales dedicado a encontrar hogares amorosos para mascotas. La web permite a los usuarios explorar animales en adopción, completar solicitudes y gestionar sus perfiles de manera sencilla e intuitiva.</>,
-    images: [shelterExpress, expressLogin],
+    images: [{
+      image: shelterExpress, 
+      description: 'Sección "Vidas transformadas gracias a la adopción", con tres testimonios acompañados de fotos de animales adoptados.'
+    }, {
+      image: expressLogin,
+      description: 'Formulario de login con ilustración de funciones destacadas en notas adhesivas.'
+    }],
     technologies: ['MongoDb', 'Express','Handlebars', 'Node.js', 'Tailwindcss'],
     features: [
       <><b>Registro y login</b> de usuarios con sesión (express-session)</>,

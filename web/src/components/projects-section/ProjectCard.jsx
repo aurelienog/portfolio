@@ -11,7 +11,7 @@ function ProjectCard({name, architecture, id, description, image, mockup, index,
 
   return (
     <div className='grid xl:grid-cols-2 xl:gap-24 mt-24'>
-      { isLast ? <LaptopMockup image={image} alt={`Captura de pantalla del proyecto ${name}`}/> : <MacMockup image={image} mockup={mockup} alt={`Captura de pantalla del proyecto ${name}`} className={` ${isOdd? 'xl:order-last' : 'xl:order-first'}`}/>}
+      { isLast ? <LaptopMockup image={image} alt={`Mockup de un Macbook que muestra la sección principal del proyecto ${name}`}/> : <MacMockup image={image} mockup={mockup} alt={`Mockup de un Mac que muestra la sección principal del proyecto ${name}`} className={` ${isOdd? 'xl:order-last' : 'xl:order-first'}`}/>}
       <article>
         <h3 className='mb-0'>{name}<br></br></h3>
         <h4>{architecture}</h4>

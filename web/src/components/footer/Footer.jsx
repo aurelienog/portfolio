@@ -17,8 +17,8 @@ function Footer() {
         <li className='links'><Link to="/#contact" className='animated-underline outline-0 focus:text-accent '>Contáctame</Link></li>
       </ul>
       <ul className='flex justify-center gap-6 w-[80%] mx-auto '>
-        <li><NeonIcon icon={Github} url="https://github.com/aurelienog" aria={'Github'}/></li>
-        <li><NeonIcon icon={LinkedIn} url="https://www.linkedin.com/in/aurelie-nogueira" aria={'LinkedIn'} /></li>
+        <li><NeonIcon icon={Github} url="https://github.com/aurelienog" aria-label={'Github'}/></li>
+        <li><NeonIcon icon={LinkedIn} url="https://www.linkedin.com/in/aurelie-nogueira" aria-label={'LinkedIn'} /></li>
       </ul>
       <p className="text-xs! text-center mt-6">&copy; 2025 Aurélie Nogueira. Todos los derechos reservados.</p>
     </footer>

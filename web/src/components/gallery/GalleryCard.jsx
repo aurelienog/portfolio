@@ -7,7 +7,7 @@ function GalleryCard({ name, architecture, technologies, description, image }) {
   return (
     <article className="galleryCard md:hover:scale-105 transition-[filter_scale]  duration-300 cursor-pointer bg-background shadow-2xl overflow-hidden rounded-[var(--border-radius)]">
       <figure>
-        <img src={image} alt="" className="rounded-[1.5rem_1.5rem_0_0] block w-full aspect-video object-cover object-center" />
+        <img src={image.image} alt={image.description} className="rounded-[1.5rem_1.5rem_0_0] block w-full aspect-video object-cover object-center" />
       </figure>  
       <h2 className="text-2xl! pb-0 pt-6 p-4 mb-0">{name}</h2>
       <h3 className="px-4 mb-3 text-xl font-sans text-text">{architecture}</h3>
