@@ -14,7 +14,7 @@ function Footer() {
         <li className='links'><Link to='/' className='animated-underline outline-0 focus:text-accent '>Top</Link></li>
         <li className='links'><Link to="/about" className='animated-underline outline-0 focus:text-accent '>Sobre Mí</Link></li>
         <li className='links'><Link to="/projects" className='animated-underline outline-0 focus:text-accent '>Mis proyectos</Link></li>
-        <li className='links'><Link to="/#contact" className='animated-underline outline-0 focus:text-accent '>Contáctame</Link></li>
+        <li className='links'><Link to="/#contacto" className='animated-underline outline-0 focus:text-accent '>Contáctame</Link></li>
       </ul>
       <ul className='flex justify-center gap-6 w-[80%] mx-auto '>
         <li><NeonIcon icon={Github} url="https://github.com/aurelienog" aria-label={'Github'}/></li>

@@ -22,7 +22,7 @@ function AboutPage() {
           <p>Hoy, estoy <b className='highlight'>en búsqueda de </b>mi primera oportunidad profesional como desarrolladora Full Stack, donde pueda aplicar lo aprendido y seguir creciendo en <b className='highlight'>un entorno colaborativo</b>.</p>
           <p>Vivo en Bilbao, pero estoy abierta al trabajo en remoto si el proyecto lo permite.<b className='highlight'> Habló francés, español e inglés</b>, lo que me permite integrarme fácilmente en equipos multilingües.</p>
           <p>Si crees que podría encajar en tu equipo, 
-            <Link to={{ pathname: '/home', hash: "#contact" }} className='mx-2 md:text-xl italic underline-offset-4 underline text-accent font-bold'> no dudes en escribirme</Link>
+            <Link to={{ pathname: '/', hash: "#contacto" }} className='mx-2 md:text-xl italic underline-offset-4 underline text-accent font-bold'> no dudes en escribirme</Link>
             y muchas gracias por llegar hasta aquí !
           </p>
         </article>

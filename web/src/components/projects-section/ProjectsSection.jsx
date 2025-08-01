@@ -6,8 +6,8 @@ function ProjectsSection({ projects }) {
     return projects.slice(0, 3); 
   }, [projects]);
   return (
-    <section className='space-y-32'>
-      <h2>Mis ultimos proyectos</h2>
+    <section aria-labelledby="proyectos" className='space-y-32'>
+      <h2 id='proyectos'>Mis ultimos proyectos</h2>
       {filteredProjects?.map((project, index) => 
       <ProjectCard className='' key={`${index}+${project.id}`} index={index} image={project.images[0]} mockup={project.mockup} {...project}/>)}
     </section>
