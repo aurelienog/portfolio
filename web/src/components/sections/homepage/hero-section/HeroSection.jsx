@@ -1,6 +1,6 @@
-import SplashBackground from '../splash-background/SplashBackground'
-import meImg from '../../assets/images/me-hero.webp';
-import extraSplash from '../../assets/images/extraSplash.webp';
+import SplashBackground from '../../../splash-background/SplashBackground'
+import meImg from '../../../../assets/images/me-hero.webp';
+import extraSplash from '../../../../assets/images/extraSplash.webp';
 import { Link } from 'react-router-dom';
 
 

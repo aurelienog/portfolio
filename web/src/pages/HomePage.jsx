@@ -1,7 +1,8 @@
-import HeroSection from '../components/hero-section/HeroSection'
-import ContactSection from '../components/contact-section/ContactSection'
-import ProjectsSection from '../components/projects-section/ProjectsSection'
-import SkillsSection from '../components/skills-section/SkillsSection'
+import ContactSection from "../components/sections/homepage/contact-section/ContactSection"
+import HeroSection from "../components/sections/homepage/hero-section/HeroSection"
+import SkillsSection from "../components/sections/homepage/skills-section/SkillsSection"
+import ProjectsSection from "../components/sections/homepage/projects-section/ProjectsSection"
+
 
 function HomePage({ projects }) {
   return (

@@ -1,7 +1,7 @@
-import SplashIcon from '../splash-icon/SplashIcon';
-import MacMockup from '../mockup/MacMockup';
-import LaptopMockup from '../mockup/LaptopMockup';
-import getTechnologiesByName from '../../lib/getTechnologiesByName';
+import SplashIcon from '../../../splash-icon/SplashIcon';
+import MacMockup from '../../../mockup/MacMockup';
+import LaptopMockup from '../../../mockup/LaptopMockup';
+import getTechnologiesByName from '../../../../lib/getTechnologiesByName';
 import { Link } from 'react-router-dom';
 
 function ProjectCard({name, architecture, id, description, image, mockup, index, technologies}) {

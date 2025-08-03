@@ -1,5 +1,5 @@
-import ContactForm from '../contact-form/ContactForm';
-import Send from '../../assets/icons/send.svg?react';
+import ContactForm from '../../../contact-form/ContactForm';
+import Send from '../../../../assets/icons/send.svg?react';
 
 function ContactSection() {
   return (

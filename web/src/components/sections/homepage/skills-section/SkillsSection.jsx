@@ -1,5 +1,5 @@
-import getTechnologiesByName from '../../lib/getTechnologiesByName';
-import { techStacks } from '../../data/data';
+import getTechnologiesByName from '../../../../lib/getTechnologiesByName';
+import { techStacks } from '../../../../data/data';
 
 function SkillsSection() {
   return (
