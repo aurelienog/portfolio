@@ -119,7 +119,7 @@ export const projects = [{
   ],
   links: {
     github: 'https://github.com/aurelienog/renov',
-    live: 'https://renov-three.vercel.app/',
+    live: 'https://www.anj-renov.fr/',
   },
 }, {
   id: '2',
