@@ -94,7 +94,7 @@ export const projects = [{
     <><b>Galería de imágenes</b> con carga diferida (lazy loading)</>,
     <><b>Tabla comparativa </b> : artesano vs. multinacional vs. low cost</>,
     <><b>Slider interactivo</b> para comparar imágenes “antes / después”</>,
-    <><b>Formulario de contacto</b> con validación (cliente + servidor) y mensajes de error'</>,
+    <><b>Formulario de contacto</b> con validación (cliente + servidor) y mensajes de error</>,
   ],
   technologies:['Next.js', 'TypeScript','Css', 'framer motion', 'vercel'],
   learnings:[

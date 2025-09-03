@@ -3,7 +3,7 @@ import { techStacks } from '../../../../data/data';
 
 function SkillsSection() {
   return (
-    <section aria-labelledby="tecnologias" className="bg-black p-8 text-white [border-radius:var(--border-radius)]">
+    <section aria-labelledby="tecnologias" className="bg-title p-8 text-white [border-radius:var(--border-radius)]">
       <h2 id='tecnologias' className="text-center text-white">Stack Tecnológico</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 sm:justify-items-center space-y-8">
         {techStacks.map((stack, index) => {

@@ -5,6 +5,7 @@
 @theme{
   --header-height:6rem;
   --color-text: #364153;
+  --color-title: rgba(0, 0, 0, 0.95);
   --color-background: #FEF8F4;
   --color-primary: ;
   --color-secondary: #e1bcc7;
@@ -88,7 +89,7 @@
     max-width: 80rem;
   }
 
-  section:not(:last-of-type) {
+  section {
     margin-bottom: 11rem;
   }
 
@@ -105,21 +106,21 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
     font-weight: 700;
-    color: #15080c;
+    color: var(--color-title);
     line-height: 1;
   }
 
   h2 {
     margin-bottom: 6rem;
     font-size: 3rem;
-    color: #15080c;
+    color: var(--color-title);
     line-height: 1;
   }
 
   h3 {
     font-size: 1.875rem;
     margin-bottom: 1rem;
-    color: #15080c;
+    color: var(--color-title);
     line-height: 1;
   }
 
@@ -167,7 +168,7 @@
     }
   }
 
-  nav ul:hover li:not(:hover) {
+  :is(nav, footer) ul:has(.links:hover) .links:not(:hover) {
     opacity: 0.5;
   }
 

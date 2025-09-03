@@ -6,19 +6,16 @@ import { Link } from "react-router-dom";
 // #FEF8F4
 function Footer() {
   return (
-    <footer className='pt-50 relative z-10' style={{
-      background: "radial-gradient(150% 85% at 50% 1%, transparent 30%, rgb(255, 160, 146) 120%)",
-    }}>
-
-      <ul className='grid justify-center text-center my-8 font-sans text-2xl  md:[&:has(.links:hover)_.links:not(:hover)]:opacity-50'>
+    <footer className='pt-8 pb-2 relative z-10 bg-title text-white/95'>
+      <ul className='grid justify-center text-center my-8 font-sans text-2xl'>
         <li className='links'><Link to='/' className='animated-underline outline-0 focus:text-accent '>Top</Link></li>
         <li className='links'><Link to="/about" className='animated-underline outline-0 focus:text-accent '>Sobre Mí</Link></li>
         <li className='links'><Link to="/projects" className='animated-underline outline-0 focus:text-accent '>Mis proyectos</Link></li>
         <li className='links'><Link to="/#contacto" className='animated-underline outline-0 focus:text-accent '>Contáctame</Link></li>
       </ul>
       <ul className='flex justify-center gap-6 w-[80%] mx-auto '>
-        <li><NeonIcon icon={Github} url="https://github.com/aurelienog" aria-label={'Github'}/></li>
-        <li><NeonIcon icon={LinkedIn} url="https://www.linkedin.com/in/aurelie-nogueira" aria-label={'LinkedIn'} /></li>
+        <li className='links'><NeonIcon icon={Github} url="https://github.com/aurelienog" aria-label={'Github'}/></li>
+        <li className='links'><NeonIcon icon={LinkedIn} url="https://www.linkedin.com/in/aurelie-nogueira" aria-label={'LinkedIn'} /></li>
       </ul>
       <p className="text-xs! text-center mt-6">&copy; 2025 Aurélie Nogueira. Todos los derechos reservados.</p>
     </footer>
