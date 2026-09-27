@@ -472,3 +472,59 @@
     font-weight: 700;
   }
 }
+.timeline-subtle-zigzag {
+  display: grid;
+  /*
+  Columna 1: El desfase inicial (1.5em).
+  Columna 2: Espacio para el icono impar (5em).
+  Columna 3: El desfase para el icono par (1.5em).
+  Columna 4: El resto del espacio para el texto.
+  */
+  grid-template-columns: 1.5em 5em 1.5em 1fr;
+  row-gap: 3.5rem;
+  column-gap: 1rem;
+} 
+
+.timeline-node {
+  display: contents; /* Desestructura el 'li' para posicionar icono y texto en el grid global */
+} 
+
+/* --- FILAS IMPARES (1, 3, etc.) --- */
+.timeline-node:nth-child(odd) .node-icon {
+  /* Ocupa las columnas 1 y 2 para alinearse a la derecha (borde de los 24px) */
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: flex-end;
+} 
+
+.timeline-node:nth-child(odd) .node-content {
+  /* Ocupa las columnas 3 y 4 */
+  grid-column: 3 / span 2;
+} 
+
+/* --- FILAS PARES (2, 4, etc.) --- */
+.timeline-node:nth-child(even) .node-icon {
+  /* Se salta la primera columna y ocupa la 2 y la 3 (desplazado 24px a la derecha) */
+  grid-column: 2 / span 2;
+  display: flex;
+  justify-content: flex-end;
+} 
+
+.timeline-node:nth-child(even) .node-content {
+  /* Ocupa la columna 4 (que por el span del icono actúa como las columnas 4 y virtuales siguientes si las hubiera) */
+  grid-column: 4 / span 2;
+} 
+
+/* Estilos de maquetación interna */
+.node-icon {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+} 
+
+.node-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
