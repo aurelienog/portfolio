@@ -554,20 +554,20 @@
   background-image: url('./assets/images/mountain1.webp');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right;
   pointer-events: none;
-  z-index: 0;
+  z-index: -10;
 }
 
 .mountain-img::before {
   content: "";
   position: absolute;
   inset: 0;
-  width: 50%;
+  height: 80%;
   background-image: url('./assets/images/always-building.webp');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: top left;
   pointer-events: none;
-  z-index: 0;
+  z-index: -10;
 }
