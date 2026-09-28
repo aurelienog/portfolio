@@ -29,7 +29,7 @@ function AboutPage() {
             </figure>
             <article className="node-content">
               <h3>2024 · MERN</h3>
-              <p>Comencé mi formación en desarrollo de software con un bootcamp de MERN, construyendo aplicaciones de frontend y backend.</p>
+              <p>Comencé mi formación en desarrollo de software con un bootcamp fullstack, construyendo aplicaciones de frontend y backend.</p>
             </article>
           </li>
           <li className="timeline-node">
@@ -63,17 +63,39 @@ function AboutPage() {
       </section>
 
       <section aria-labelledby="method" className="mb-20 mx-auto max-w-4xl">
-        <h2 id="method">Cómo me gusta trabajar</h2>
-        <ul className=" mx-auto space-y-6">
-          <li>
-            <p className='highlight'>Priorizo un código limpio y fácil de entender.</p>
-            <p>Cada módulo tiene una responsabilidad clara, las funciones son pequeñas y hacen una tarea concreta.</p></li>
-          <li>
-            <p className='highlight'>La estructura también forma parte del diseño.</p>
-            <p>Organizo el proyecto en carpetas y módulos según sus responsabilidades, y mantengo separadas la lógica de negocio, la interfaz y la persistencia.</p></li>
-          <li>
-            <p className='highlight'>El resultado es un software robusto con una arquitectura transparente.</p>
-            <p>La estructura de carpetas permite localizar cualquier elemento de forma inmediata. Al leer el código, cualquier desarrollador comprende el funcionamiento del sistema sin necesidad de analizar todo el proyecto.</p>
+        <h2 id="method">Cómo trabajo</h2>
+        <p className="highlight">Del problema a la solución. Paso a paso.</p>
+        <figure>
+          <img src="" alt="" />
+        </figure>
+        
+        <ul className="mx-auto space-y-6">
+          <li className="md:grid grid-cols-4">
+            <figure >
+              <SplashIcon splash={greenSplash} className="w-[75%]"/>
+            </figure>
+            <article className="col-span-3">
+              <h3>Un código limpio y fácil de entender.</h3>
+              <p>Cada módulo tiene una responsabilidad clara, las funciones son pequeñas y hacen una tarea concreta.</p>
+            </article>
+          </li>
+          <li className="md:grid grid-cols-4">
+            <figure className="w-[75%]">
+              <SplashIcon splash={greenSplash}/>
+            </figure>
+            <article className="col-span-3">
+              <h3>La estructura también forma parte del diseño.</h3>
+              <p>Organizo el proyecto en carpetas y módulos según sus responsabilidades, y mantengo separadas la lógica de negocio, la interfaz y la persistencia.</p>
+            </article>
+          </li>
+          <li className="md:grid grid-cols-4">
+              <figure className="w-[75%]">
+                <SplashIcon splash={greenSplash}/>
+              </figure>
+              <article className="col-span-3">
+                <h3>El resultado es un software robusto con una arquitectura transparente.</h3>
+                <p>La estructura de carpetas permite localizar cualquier elemento de forma inmediata. Al leer el código, cualquier desarrollador comprende el funcionamiento del sistema sin necesidad de analizar todo el proyecto.</p>
+              </article>
           </li>
         </ul>
       </section>
@@ -100,8 +122,20 @@ function AboutPage() {
         </ul>
       </section>
 
-      <section aria-labelledby="actualidad" className="mx-auto max-w-4xl">
-        <h2 id="actualidad">¿Qué sigue?</h2>
+      <section aria-labelledby="now" className="max-w-4xl mx-auto space-y-6">
+        <h2 id="now">En qué estoy trabajando</h2>
+        <p>Actualmente estoy completando el Common Core de 42 Bilbao. Llevo más de 1.200 horas de formación práctica y 23 proyectos completados, trabajando con problemas cada vez más complejos.</p>
+        <p>Entre mis proyectos recientes se encuentran:</p>
+        <ul aria-label="lista de proyectos recientes">
+          <li><b className='highlight'>RAG</b> — algoritmos, IA, POO y datos</li>
+          <li><b className='highlight'>Pacman</b> — algoritmos, POO y gráficos</li>
+          <li><b className='highlight'>Codexion</b> — concurrencia, hilos POSIX y planificación</li>
+        </ul>
+        <p>Además de 42, continúo desarrollando y manteniendo proyectos de forma independiente.</p>
+      </section>
+
+      <section aria-labelledby="next" className="mx-auto max-w-4xl relative build-img">
+        <h2 id="next">¿Qué sigue?</h2>
         <p>Estoy buscando mi primera oportunidad profesional como Software Developer.</p>
         <p>Me interesan especialmente posiciones de backend y desarrollo de software en general.</p>
         <ul aria-label="">
@@ -109,24 +143,10 @@ function AboutPage() {
           <li>🌍 Idiomas: Francés, Español, Inglés</li>
           <li>✉️ Linkedin:</li>
         </ul>
-        <p>Si crees que podría encajar en tu equipo,<Link to={{ pathname: '/', hash: "#contacto" }} className='mx-2 md:text-xl italic underline-offset-4 underline text-accent font-bold'> no dudes en escribirme</Link>.</p>
+        <p>Si crees que podría encajar en tu equipo,<br /><Link to={{ pathname: '/', hash: "#contacto" }} className='mx-2 md:text-xl italic underline-offset-4 underline text-accent font-bold'> no dudes en escribirme !</Link></p>
       </section>
       </main>
   )
 }
 
 export default AboutPage
-
-
-
-// Siempre tuve curiosidad por el mundo de la tecnología. En 2024, decidí dar el paso hacia el desarrollo web y me formé a través de un bootcamp basado en el stack MERN.
-
-// Al finalizar, seguí aprendiendo por mi cuenta, profundizando en tecnologías como Next.js y TypeScript.
-
-// Como primer proyecto freelance, diseñé y desarrollé un sitio web completo para un artesano francés, abordando tanto el rendimiento como la accesibilidad y el SEO.
-
-// Hoy, estoy en búsqueda de mi primera oportunidad profesional como desarrolladora Full Stack, donde pueda aplicar lo aprendido y seguir creciendo en un entorno colaborativo.
-
-// Vivo en Bilbao, pero estoy abierta al trabajo en remoto si el proyecto lo permite. Habló francés, español e inglés, lo que me permite integrarme fácilmente en equipos multilingües.
-
-// Si crees que podría encajar en tu equipo, no dudes en escribirmey muchas gracias por llegar hasta aquí !

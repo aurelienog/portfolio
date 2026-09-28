@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // #FEF8F4
 function Footer() {
   return (
-    <footer className='pt-8 pb-2 relative z-10 bg-title text-white/95'>
+    <footer className='mountain-img pt-20 pb-20 relative z-10'>
       <ul className='grid justify-center text-center my-8 font-sans text-2xl'>
         <li className='links'><Link to='/' className='animated-underline outline-0 focus:text-accent '>Top</Link></li>
         <li className='links'><Link to="/about" className='animated-underline outline-0 focus:text-accent '>Sobre Mí</Link></li>
