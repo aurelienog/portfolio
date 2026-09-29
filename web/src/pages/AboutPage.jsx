@@ -26,8 +26,9 @@ function AboutPage() {
         </article>
       </section>
       
-      <section aria-labelledby="my-path" className="mb-20 mx-auto max-w-4xl">
+      <section aria-labelledby="my-path" className="mb-40 mx-auto max-w-4xl">
         <h2 id="my-path">Mi trayectoria</h2>
+        <p className="mb-12">Un viaje de curiosidad, proyectos y aprendizaje constante</p>
 
         <ul className="timeline-subtle-zigzag relative spiral">
           <li className="timeline-node">
@@ -44,7 +45,7 @@ function AboutPage() {
               <SplashIcon splash={blueSplash} icon={web} name=''/>
             </figure>
             <article className="node-content">
-              <h3>2025 · Producción · ANJ Renov</h3>
+              <h3>2025 · Producción</h3>
               <p>Diseñé, desarrollé y desplegué de forma independiente un sitio web para un negocio familiar con Next.js y TypeScript, encargándome de todo el proceso.</p>
             </article>
           </li>
@@ -53,7 +54,7 @@ function AboutPage() {
               <SplashIcon splash={purpleSplash} icon={logo42} name=''/>
             </figure>
             <article className="node-content">
-              <h3>Ahora · 42 · Ingeniería de Software</h3>
+              <h3>2026 · Ingeniería de Software</h3>
               <p>Inmersión en la metodología de 42, construyendo bases sólidas en algoritmos, estructuras de datos, gestión de memoria, concurrencia y diseño de software.</p>
             </article>
           </li>
