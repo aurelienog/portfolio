@@ -5,7 +5,10 @@ import greenSplash from '../assets/images/splashes/green-circle.webp';
 import blueSplash from '../assets/images/splashes/blue-circle.webp';
 import redSplash from '../assets/images/splashes/red-circle.webp';
 import purpleSplash from '../assets/images/splashes/purple-circle.webp';
-// import spiral from '../assets/images/splashes/spiral.webp';
+import logo42 from '../assets/icons/42.svg';
+import paper from '../assets/icons/paper-airplane.svg';
+import school from '../assets/icons/school.svg';
+import web from '../assets/icons/web.svg';
 
 function AboutPage() {
   return (
@@ -28,35 +31,35 @@ function AboutPage() {
 
         <ul className="timeline-subtle-zigzag relative spiral">
           <li className="timeline-node">
-            <figure className="node-icon z-10">
-              <SplashIcon splash={greenSplash}/>
+            <figure className="node-icon z-10" aria-hidden="true">
+              <SplashIcon splash={greenSplash} icon={school} name=''/>
             </figure>
             <article className="node-content">
-              <h3>2024 · MERN</h3>
-              <p>Comencé mi formación en desarrollo de software con un bootcamp fullstack, construyendo aplicaciones de frontend y backend.</p>
+              <h3>2024 · Bootcamp Fullstack</h3>
+              <p>Comencé mi formación en desarrollo de software con el stack MERN, construyendo aplicaciones de frontend y backend.</p>
             </article>
           </li>
           <li className="timeline-node">
-            <figure className="node-icon z-10">
-              <SplashIcon splash={blueSplash}/>
+            <figure className="node-icon z-10" aria-hidden="true">
+              <SplashIcon splash={blueSplash} icon={web} name=''/>
             </figure>
             <article className="node-content">
-              <h3>Producción · ANJ Renov</h3>
+              <h3>2025 · Producción · ANJ Renov</h3>
               <p>Diseñé, desarrollé y desplegué de forma independiente un sitio web para un negocio familiar con Next.js y TypeScript, encargándome de todo el proceso.</p>
             </article>
           </li>
           <li className="timeline-node">
-            <figure className="node-icon z-10">
-              <SplashIcon splash={purpleSplash}/>
+            <figure className="node-icon z-10" aria-hidden="true">
+              <SplashIcon splash={purpleSplash} icon={logo42} name=''/>
             </figure>
             <article className="node-content">
-              <h3>42 · Ingeniería de Software</h3>
+              <h3>Ahora · 42 · Ingeniería de Software</h3>
               <p>Inmersión en la metodología de 42, construyendo bases sólidas en algoritmos, estructuras de datos, gestión de memoria, concurrencia y diseño de software.</p>
             </article>
           </li>
           <li className="timeline-node">
-            <figure className="node-icon z-10">
-              <SplashIcon splash={redSplash}/>
+            <figure className="node-icon z-10" aria-hidden="true">
+              <SplashIcon splash={redSplash} icon={paper} name=''/>
             </figure>
             <article className="node-content">
               <h3>Ahora · Open to work</h3>
@@ -66,42 +69,15 @@ function AboutPage() {
         </ul>
       </section>
 
-      <section aria-labelledby="method" className="mb-20 mx-auto max-w-4xl">
-        <h2 id="method">Cómo trabajo</h2>
-        <p className="highlight">Del problema a la solución. Paso a paso.</p>
-        <figure>
-          <img src="" alt="" />
-        </figure>
-        
-        <ul className="mx-auto space-y-6">
-          <li className="md:grid grid-cols-4">
-            <figure >
-              <SplashIcon splash={greenSplash} className="w-[75%]"/>
-            </figure>
-            <article className="col-span-3">
-              <h3>Un código limpio y fácil de entender.</h3>
-              <p>Cada módulo tiene una responsabilidad clara, las funciones son pequeñas y hacen una tarea concreta.</p>
-            </article>
-          </li>
-          <li className="md:grid grid-cols-4">
-            <figure className="w-[75%]">
-              <SplashIcon splash={greenSplash}/>
-            </figure>
-            <article className="col-span-3">
-              <h3>La estructura también forma parte del diseño.</h3>
-              <p>Organizo el proyecto en carpetas y módulos según sus responsabilidades, y mantengo separadas la lógica de negocio, la interfaz y la persistencia.</p>
-            </article>
-          </li>
-          <li className="md:grid grid-cols-4">
-              <figure className="w-[75%]">
-                <SplashIcon splash={greenSplash}/>
-              </figure>
-              <article className="col-span-3">
-                <h3>El resultado es un software robusto con una arquitectura transparente.</h3>
-                <p>La estructura de carpetas permite localizar cualquier elemento de forma inmediata. Al leer el código, cualquier desarrollador comprende el funcionamiento del sistema sin necesidad de analizar todo el proyecto.</p>
-              </article>
-          </li>
+      <section aria-labelledby="now" className="max-w-4xl mx-auto relative code-img">
+        <h2 id="now">Proyectos destacados</h2>
+        <p>Entre mis proyectos recientes se encuentran:</p>
+        <ul aria-label="lista de proyectos recientes">
+          <li><b className='highlight'>RAG</b> — algoritmos, IA, POO y datos</li>
+          <li><b className='highlight'>Pacman</b> — algoritmos, POO y gráficos</li>
+          <li><b className='highlight'>Codexion</b> — concurrencia, hilos POSIX y planificación</li>
         </ul>
+        <p>Además de 42, continúo desarrollando y manteniendo proyectos de forma independiente.</p>
       </section>
 
       <section aria-labelledby="what-I-bring" className="mb-20 mx-auto max-w-4xl">
@@ -126,21 +102,9 @@ function AboutPage() {
         </ul>
       </section>
 
-      <section aria-labelledby="now" className="max-w-4xl mx-auto space-y-6">
-        <h2 id="now">En qué estoy trabajando</h2>
-        <p>Actualmente estoy completando el Common Core de 42 Bilbao. Llevo más de 1.200 horas de formación práctica y 23 proyectos completados, trabajando con problemas cada vez más complejos.</p>
-        <p>Entre mis proyectos recientes se encuentran:</p>
-        <ul aria-label="lista de proyectos recientes">
-          <li><b className='highlight'>RAG</b> — algoritmos, IA, POO y datos</li>
-          <li><b className='highlight'>Pacman</b> — algoritmos, POO y gráficos</li>
-          <li><b className='highlight'>Codexion</b> — concurrencia, hilos POSIX y planificación</li>
-        </ul>
-        <p>Además de 42, continúo desarrollando y manteniendo proyectos de forma independiente.</p>
-      </section>
-
       <section aria-labelledby="next" className=" mx-auto max-w-4xl relative build-img">
-        <h2 id="next" className="mb-20">¿Qué sigue?</h2>
-        <p>Estoy buscando mi primera oportunidad profesional como <b className="highlight">Software Developer.</b></p>
+        <h2 id="next">¿Qué sigue?</h2>
+        <p className="max-w-[40ch]">Estoy buscando mi primera oportunidad profesional como <b className="highlight">Software Developer.</b></p>
         <p>Me interesan especialmente posiciones de backend y desarrollo de software en general.</p>
         <ul aria-label="contact" className="space-y-2 my-6">
           <li>📍 Ubicación: Bilbao / Remoto</li>
@@ -154,3 +118,39 @@ function AboutPage() {
 }
 
 export default AboutPage
+
+      // <section aria-labelledby="method" className="mb-20 mx-auto max-w-4xl">
+      //   <h2 id="method">Cómo trabajo</h2>
+      //   <p className="highlight my-12">Del problema a la solución. Paso a paso.</p>
+
+        
+      //   <ul className="mx-auto space-y-6">
+      //     <li className="md:grid grid-cols-4">
+      //       <article className="col-span-3">
+      //         <h3>Un código limpio y fácil de entender.</h3>
+      //         <p>Cada módulo tiene una responsabilidad clara, las funciones son pequeñas y hacen una tarea concreta.</p>
+      //       </article>
+      //       <figure className="w-[75%]">
+      //         <SplashIcon splash={greenSplash}/>
+      //       </figure>
+      //     </li>
+      //     <li className="md:grid grid-cols-4">
+      //       <article className="col-span-3">
+      //         <h3>La estructura también forma parte del diseño.</h3>
+      //         <p>Organizo el proyecto en carpetas y módulos según sus responsabilidades, y mantengo separadas la lógica de negocio, la interfaz y la persistencia.</p>
+      //       </article>
+      //       <figure className="w-[75%]">
+      //         <SplashIcon splash={greenSplash}/>
+      //       </figure>
+      //     </li>
+      //     <li className="md:grid grid-cols-4">  
+      //       <article className="col-span-3">
+      //         <h3>El resultado es un software robusto con una arquitectura transparente.</h3>
+      //         <p>La estructura de carpetas permite localizar cualquier elemento de forma inmediata. Al leer el código, cualquier desarrollador comprende el funcionamiento del sistema sin necesidad de analizar todo el proyecto.</p>
+      //       </article>
+      //       <figure className="w-[75%]">
+      //         <SplashIcon splash={greenSplash}/>
+      //       </figure>
+      //     </li>
+      //   </ul>
+      // </section>
