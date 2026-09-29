@@ -101,7 +101,7 @@ function AboutPage() {
       </section>
 
       <section aria-labelledby="what-I-bring" className="mb-20 mx-auto max-w-4xl">
-        <h2 id="what-I-bring">Lo que aporto</h2>
+        <h2 id="what-I-bring" className="line relative">Lo que aporto</h2>
         <ul className='space-y-6'>
           <li>
             <p className='highlight'>Fundamentos sólidos</p>
@@ -134,16 +134,16 @@ function AboutPage() {
         <p>Además de 42, continúo desarrollando y manteniendo proyectos de forma independiente.</p>
       </section>
 
-      <section aria-labelledby="next" className="space-y-6 md:pb-20 mx-auto max-w-4xl relative build-img">
+      <section aria-labelledby="next" className=" mx-auto max-w-4xl relative build-img">
         <h2 id="next" className="mb-20">¿Qué sigue?</h2>
-        <p>Estoy buscando mi primera oportunidad profesional como Software Developer.</p>
+        <p>Estoy buscando mi primera oportunidad profesional como <b className="highlight">Software Developer.</b></p>
         <p>Me interesan especialmente posiciones de backend y desarrollo de software en general.</p>
-        <ul aria-label="contact" className="space-y-2">
+        <ul aria-label="contact" className="space-y-2 my-6">
           <li>📍 Ubicación: Bilbao / Remoto</li>
           <li>🌍 Idiomas: Francés, Español, Inglés</li>
           <li>✉️ Linkedin:</li>
         </ul>
-        <p>Si crees que podría encajar en tu equipo,<br/><Link to={{ pathname: '/', hash: "#contacto" }} className='mx-2 md:text-xl italic underline-offset-4 underline text-accent font-bold'>no dudes en escribirme !</Link></p>
+        <p>Si crees que podría encajar en tu equipo,<Link to={{ pathname: '/', hash: "#contacto" }} className='mx-2 md:text-xl italic underline-offset-4 underline text-accent font-bold'>no dudes en escribirme !</Link></p>
       </section>
       </main>
   )

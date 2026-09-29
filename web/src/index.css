@@ -463,6 +463,10 @@
     font-size: 1.25rem;
   }
 
+  li:not(nav li, footer li) {
+    font-size: 1.25rem;
+  }
+
   h1 {
     font-size: 6rem;
   }
@@ -530,17 +534,17 @@
 }
 
 
-.build-img::after {
+.build-img::before {
   content: "";
   position: absolute;
   height: 40%;
   width: 40%;
-  bottom: 0em;
+  top: 0;
   right: 0;
   background-image: url('./assets/images/build.webp');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: top right;
   transform: rotate(-10deg);
   pointer-events: none;
   z-index: 0;
@@ -562,7 +566,7 @@
 .mountain-img::before {
   content: "";
   position: absolute;
-  inset: 1em;
+  inset: 2em;
   left: 2em;
   height: 70%;
   background-image: url('./assets/images/always-building.webp');
@@ -578,7 +582,7 @@ footer.mountain-img ul:first-of-type::before {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-52%);
   width: 380px;           
   height: 60px;
   background-image: url('./assets/images/line-icons.svg');
@@ -646,19 +650,14 @@ footer.mountain-img ul:first-of-type::before {
   background-size: 50vw auto;
 } */
 
-.line {
-  position: relative;
-}
-
 .line::after {
   content: "";
   position: absolute;
-  bottom: -15em;                   /* Anclado abajo del todo */
-  left: 50%;                   /* Lo sitúa al centro */
-  transform: translateX(-50%); /* Centrado horizontal matemático */
-
-  width: 60%;
-  height: 60%;                /* Ajusta la altura según el grosor que quieras */
+  top: 0.55em;
+  left: 0;                  /* Anclado abajo del todo */                   /* Lo sitúa al centro */
+  transform: translateX(-30%); /* Centrado horizontal matemático */
+  width: 150%;
+  height: 150%;                /* Ajusta la altura según el grosor que quieras */
 
   background-image: url('./assets/images/line.webp');
   background-size: contain;    /* Mantiene la proporción de la imagen sin deformarla */
