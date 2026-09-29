@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 120" width="100%" height="100%" fill="none">
+  <!-- 1. Icono Código </ > -->
+  <g stroke="#0c2340" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 65 40 L 45 60 L 65 80" />
+    <path d="M 85 80 L 105 60 L 85 40" />
+    <path d="M 78 40 L 72 80" />
+  </g>
+
+  <!-- 2. Primeros 3 puntos -->
+  <g fill="#0c2340">
+    <circle cx="170" cy="60" r="5" />
+    <circle cx="230" cy="60" r="5" />
+    <circle cx="290" cy="60" r="5" />
+  </g>
+
+  <!-- 3. Cursor flecha -->
+  <g transform="translate(365, 30)">
+    <path d="M 5 5 L 5 52 L 18 39 L 29 60 L 37 56 L 26 35 L 42 35 Z" 
+          fill="#f4f7fb" 
+          stroke="#0c2340" 
+          stroke-width="5" 
+          stroke-linejoin="round" 
+          stroke-linecap="round" />
+  </g>
+
+  <!-- 4. Segundos 3 puntos -->
+  <g fill="#0c2340">
+    <circle cx="475" cy="60" r="5" />
+    <circle cx="535" cy="60" r="5" />
+    <circle cx="595" cy="60" r="5" />
+  </g>
+
+  <!-- 5. Destello / Asterisco con centro -->
+  <g stroke="#0c2340" stroke-width="6" stroke-linecap="round">
+    <!-- Rayos principales (cruz) -->
+    <line x1="680" y1="28" x2="680" y2="92" />
+    <line x1="648" y1="60" x2="712" y2="60" />
+    <!-- Rayos diagonales -->
+    <line x1="657" y1="37" x2="703" y2="83" />
+    <line x1="703" y1="37" x2="657" y2="83" />
+    <!-- Punto central -->
+    <circle cx="680" cy="60" r="6" fill="#0c2340" stroke="none" />
+  </g>
+</svg>

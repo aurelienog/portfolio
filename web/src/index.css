@@ -533,14 +533,14 @@
 .build-img::after {
   content: "";
   position: absolute;
-  bottom: -8em;
-  right: -5em;
-  width: 30em;       
-  height: 20em;
+  height: 40%;
+  width: 40%;
+  bottom: 0em;
+  right: 0;
   background-image: url('./assets/images/build.webp');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: bottom right;
   transform: rotate(-10deg);
   pointer-events: none;
   z-index: 0;
@@ -562,12 +562,109 @@
 .mountain-img::before {
   content: "";
   position: absolute;
-  inset: 0;
-  height: 80%;
+  inset: 1em;
+  left: 2em;
+  height: 70%;
   background-image: url('./assets/images/always-building.webp');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: top left;
   pointer-events: none;
   z-index: -10;
+}
+
+footer.mountain-img ul:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;           
+  height: 60px;
+  background-image: url('./assets/images/line-icons.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* footer.mountain-img ul:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 39vw;
+  height: 6px;
+  background-image: radial-gradient(circle, #344B85 35%, transparent 40%);
+  background-size: 18px 6px;
+  background-repeat: repeat-x;
+  pointer-events: none;
+  z-index: 10;
+} */
+
+
+/* footer.mountain-img ul:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50vw;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #344B85 50%, transparent 100%);
+  pointer-events: none;
+  z-index: 10;
+} */
+
+/* 
+footer.mountain-img ul:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: 0;  
+  left: 50%;
+
+  width: 50vw;           
+  aspect-ratio: 16 / 9;
+  
+
+  background-image: url('./assets/images/line.webp'); 
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  pointer-events: none;
+  z-index: 10;
+} */
+
+/* footer.mountain-img {
+
+  background-image: url('./assets/images/line.webp');
+  background-repeat: no-repeat;
+  background-position: center top; 
+  background-size: 50vw auto;
+} */
+
+.line {
+  position: relative;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  bottom: -15em;                   /* Anclado abajo del todo */
+  left: 50%;                   /* Lo sitúa al centro */
+  transform: translateX(-50%); /* Centrado horizontal matemático */
+
+  width: 60%;
+  height: 60%;                /* Ajusta la altura según el grosor que quieras */
+
+  background-image: url('./assets/images/line.webp');
+  background-size: contain;    /* Mantiene la proporción de la imagen sin deformarla */
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  pointer-events: none;
+  z-index: 10;
 }

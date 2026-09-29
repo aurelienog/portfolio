@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 // #FEF8F4
 function Footer() {
   return (
-    <footer className='mountain-img pt-40 pb-20 relative z-10'>
+    <footer className='mountain-img pt-30 mb-4 relative z-10'>
       <ul className='grid justify-center text-center my-8 font-sans text-2xl'>
         <li className='links'><Link to='/' className='animated-underline outline-0 focus:text-accent '>Top</Link></li>
         <li className='links'><Link to="/about" className='animated-underline outline-0 focus:text-accent '>Sobre Mí</Link></li>
         <li className='links'><Link to="/projects" className='animated-underline outline-0 focus:text-accent '>Mis proyectos</Link></li>
         <li className='links'><Link to="/#contacto" className='animated-underline outline-0 focus:text-accent '>Contáctame</Link></li>
       </ul>
-      <ul className='flex justify-center gap-6 w-[80%] mx-auto '>
+      <ul className='flex justify-center gap-6 w-[80%] mx-auto mb-12'>
         <li className='links'><NeonIcon icon={Github} url="https://github.com/aurelienog" aria-label={'Github'}/></li>
         <li className='links'><NeonIcon icon={LinkedIn} url="https://www.linkedin.com/in/aurelie-nogueira" aria-label={'LinkedIn'} /></li>
       </ul>
