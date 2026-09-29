@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import workingImg from '../assets/images/working.jpg';
 import SplashIcon from "../components/splash-icon/SplashIcon";
-import greenSplash from '../assets/images/greenSplash.webp';
+import greenSplash from '../assets/images/splashes/green-circle.webp';
+import blueSplash from '../assets/images/splashes/blue-circle.webp';
+import redSplash from '../assets/images/splashes/red-circle.webp';
+import purpleSplash from '../assets/images/splashes/purple-circle.webp';
+// import spiral from '../assets/images/splashes/spiral.webp';
 
 function AboutPage() {
   return (
@@ -22,9 +26,9 @@ function AboutPage() {
       <section aria-labelledby="my-path" className="mb-20 mx-auto max-w-4xl">
         <h2 id="my-path">Mi trayectoria</h2>
 
-        <ul className="timeline-subtle-zigzag">
+        <ul className="timeline-subtle-zigzag relative spiral">
           <li className="timeline-node">
-            <figure className="node-icon">
+            <figure className="node-icon z-10">
               <SplashIcon splash={greenSplash}/>
             </figure>
             <article className="node-content">
@@ -33,8 +37,8 @@ function AboutPage() {
             </article>
           </li>
           <li className="timeline-node">
-            <figure className="node-icon">
-              <SplashIcon splash={greenSplash}/>
+            <figure className="node-icon z-10">
+              <SplashIcon splash={blueSplash}/>
             </figure>
             <article className="node-content">
               <h3>Producción · ANJ Renov</h3>
@@ -42,8 +46,8 @@ function AboutPage() {
             </article>
           </li>
           <li className="timeline-node">
-            <figure className="node-icon">
-              <SplashIcon splash={greenSplash}/>
+            <figure className="node-icon z-10">
+              <SplashIcon splash={purpleSplash}/>
             </figure>
             <article className="node-content">
               <h3>42 · Ingeniería de Software</h3>
@@ -51,8 +55,8 @@ function AboutPage() {
             </article>
           </li>
           <li className="timeline-node">
-            <figure className="node-icon">
-              <SplashIcon splash={greenSplash}/>
+            <figure className="node-icon z-10">
+              <SplashIcon splash={redSplash}/>
             </figure>
             <article className="node-content">
               <h3>Ahora · Open to work</h3>
@@ -141,7 +145,7 @@ function AboutPage() {
         <ul aria-label="contact" className="space-y-2 my-6">
           <li>📍 Ubicación: Bilbao / Remoto</li>
           <li>🌍 Idiomas: Francés, Español, Inglés</li>
-          <li>✉️ Linkedin:</li>
+          <li>✉️ Linkedin: <a href="https://www.linkedin.com/in/aurelie-nogueira" aria-label={'LinkedIn'} className="underline underline-offset-2">aurelie-nogueira</a></li>
         </ul>
         <p>Si crees que podría encajar en tu equipo,<Link to={{ pathname: '/', hash: "#contacto" }} className='mx-2 md:text-xl italic underline-offset-4 underline text-accent font-bold'>no dudes en escribirme !</Link></p>
       </section>
