@@ -103,7 +103,7 @@ function AboutPage() {
         </ul>
       </section>
 
-      <section aria-labelledby="next" className=" mx-auto max-w-4xl relative build-img">
+      <section aria-labelledby="next" className=" mx-auto max-w-4xl relative build-img mt-60 sm:mt-0">
         <h2 id="next">¿Qué sigue?</h2>
         <p className="max-w-[40ch]">Estoy buscando mi primera oportunidad profesional como <b className="highlight">Software Developer.</b></p>
         <p>Me interesan especialmente posiciones de backend y desarrollo de software en general.</p>

@@ -435,6 +435,22 @@
     scroll-behavior: smooth;
   }
 
+  .build-img::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -60%;
+    background-image: url('./assets/images/build.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transform: rotate(-10deg);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+
   .content {
     display: grid;
     grid: 50vmin / auto-flow 80vmin;
@@ -467,7 +483,7 @@
 
 
 
-@media(min-width: 768px) {
+@media(min-width: 640px) {
     section {
     margin-bottom: 10em;
   }
@@ -478,6 +494,7 @@
       background-color: currentColor;
     }
 
+    /* timeline */
     .timeline-subtle-zigzag {
     display: grid;
     grid-template-columns: 1.5em 5em 1.5em 1fr;
@@ -555,6 +572,22 @@
     pointer-events: none;
     z-index: 0;
   }
+
+  .build-img::before {
+    content: "";
+    position: absolute;
+    height: 55%;
+    width: 55%;
+    top: -20%;
+    right: -10%;
+    background-image: url('./assets/images/build.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    transform: rotate(-10deg);
+    pointer-events: none;
+    z-index: 0;
+  }
 }
 
 @media(width >= 48rem) {
@@ -576,22 +609,6 @@
   }
 }
 
-
-.build-img::before {
-  content: "";
-  position: absolute;
-  height: 55%;
-  width: 55%;
-  top: -20%;
-  right: -10%;
-  background-image: url('./assets/images/build.webp');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top right;
-  transform: rotate(-10deg);
-  pointer-events: none;
-  z-index: 0;
-}
 
 .code-img::before {
   content: "";
