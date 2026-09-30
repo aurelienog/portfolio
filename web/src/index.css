@@ -588,6 +588,38 @@
     pointer-events: none;
     z-index: 0;
   }
+
+
+    form::before {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    top: -20%;
+    right: 0;
+    background-image: url('./assets/images/horizon.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    pointer-events: none;
+    transform: rotate(-10deg);
+    z-index: 0;
+  }
+
+  form::after {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    bottom: 0;
+    right: 0;
+    background-image: url('./assets/images/pc.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    pointer-events: none;
+    z-index: 0;
+  }
 }
 
 @media(width >= 48rem) {
