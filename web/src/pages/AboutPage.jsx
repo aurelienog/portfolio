@@ -9,6 +9,10 @@ import logo42 from '../assets/icons/42.svg';
 import paper from '../assets/icons/paper-airplane.svg';
 import school from '../assets/icons/school.svg';
 import web from '../assets/icons/web.svg';
+import plant from '../assets/icons/plant.webp';
+import brain from '../assets/icons/brain.webp';
+import prod from '../assets/icons/prod.webp';
+import view from '../assets/icons/view.webp';
 
 function AboutPage() {
   return (
@@ -83,27 +87,31 @@ function AboutPage() {
 
       <section aria-labelledby="what-I-bring" className="mb-20 mx-auto max-w-4xl">
         <h2 id="what-I-bring" className="line relative">Lo que aporto</h2>
-        <ul className='space-y-6'>
-          <li>
-            <p className='highlight'>Fundamentos sólidos</p>
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+          <li className="grid grid-rows-[auto_auto_1fr] md:row-span-3 md:grid-rows-subgrid gap-y-3">
+            <img src={brain} alt="" aria-hidden="true"/>
+            <h3>Fundamentos sólidos</h3>
             <p>Algoritmos, estructuras de datos, concurrencia, programación orientada a objetos, redes y administración de sistemas.</p>
           </li>
-          <li>
-            <p className='highlight'>Autonomía y resiliencia (Metodología 42)</p>
+          <li className="grid grid-rows-[auto_auto_1fr] md:row-span-3 md:grid-rows-subgrid gap-y-3">
+            <img src={plant} alt="" aria-hidden="true" className="h-[90%] place-self-end mx-auto"/>
+            <h3>Autonomía y resiliencia (Metodología 42)</h3>
             <p>Más de 23 proyectos validados sin clases teóricas. He aprendido a investigar la documentación oficial, resolver bugs complejos de forma autónoma y colaborar en entornos de revisión por pares (peer-learning).</p>
           </li>
-          <li>
-            <p className='highlight'>Experiencia real en producción</p>
+          <li className="grid grid-rows-[auto_auto_1fr] md:row-span-3 md:grid-rows-subgrid gap-y-3">
+            <img src={prod} alt="" aria-hidden="true"/>
+            <h3>Experiencia real en producción</h3>
             <p>Diseñé, desarrollé y desplegué de forma independiente un sitio web en producción para un negocio familiar utilizando Next.js y TypeScript.</p>
           </li>
-          <li>
-            <p className='highlight'>Visión integral del desarrollo</p>
+          <li className="grid grid-rows-[auto_auto_1fr] md:row-span-3 md:grid-rows-subgrid gap-y-3">
+            <img src={view} alt="" aria-hidden="true"/>
+            <h3>Visión integral del desarrollo</h3>
             <p>Disfruto moviéndome entre las distintas capas de un proyecto: entender el problema, diseñar la solución, escribir el código y conseguir que funcione en producción.</p>
           </li>
         </ul>
       </section>
 
-      <section aria-labelledby="next" className=" mx-auto max-w-4xl relative build-img mt-60 sm:mt-0">
+      <section aria-labelledby="next" className=" mx-auto max-w-4xl relative build-img mt-60 mb-70 sm:mb-0 sm:mt-0">
         <h2 id="next">¿Qué sigue?</h2>
         <p className="max-w-[40ch]">Estoy buscando mi primera oportunidad profesional como <b className="highlight">Software Developer.</b></p>
         <p>Me interesan especialmente posiciones de backend y desarrollo de software en general.</p>

@@ -440,11 +440,11 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    top: -60%;
+    bottom: -50%;
     background-image: url('./assets/images/build.webp');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: bottom center;
     transform: rotate(-10deg);
     pointer-events: none;
     z-index: 0;
@@ -481,7 +481,81 @@
   }
 }
 
+.code-img::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: -10px;
+  right: 0;
+  background-image: url('./assets/images/code-img.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  pointer-events: none;
+  z-index: 0;
+}
 
+.mountain-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background-image: url('./assets/images/mountain1.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  pointer-events: none;
+  z-index: -10;
+}
+
+.mountain-img::before {
+  content: "";
+  position: absolute;
+  inset: 2em;
+  left: 2em;
+  height: 50%;
+  background-image: url('./assets/images/always-building.webp');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  pointer-events: none;
+  z-index: -10;
+}
+
+footer.mountain-img ul:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translateX(-52%);
+  width: 380px;           
+  height: 60px;
+  background-image: url('./assets/images/line-icons.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  top: 0.55em;
+  left: 0;                  /* Anclado abajo del todo */                   /* Lo sitúa al centro */
+  transform: translateX(-30%); /* Centrado horizontal matemático */
+  width: 150%;
+  height: 150%;                /* Ajusta la altura según el grosor que quieras */
+
+  background-image: url('./assets/images/line.webp');
+  background-size: contain;    /* Mantiene la proporción de la imagen sin deformarla */
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  pointer-events: none;
+  z-index: 10;
+}
 
 @media(min-width: 640px) {
     section {
@@ -572,6 +646,9 @@
     pointer-events: none;
     z-index: 0;
   }
+  footer.mountain-img ul:first-of-type::before {
+    top: 0
+  }
 
   .build-img::before {
     content: "";
@@ -605,21 +682,6 @@
     transform: rotate(-10deg);
     z-index: 0;
   }
-
-  form::after {
-    content: "";
-    position: absolute;
-    height: 80%;
-    width: 80%;
-    bottom: 0;
-    right: 0;
-    background-image: url('./assets/images/pc.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center right;
-    pointer-events: none;
-    z-index: 0;
-  }
 }
 
 @media(width >= 48rem) {
@@ -639,81 +701,26 @@
     font-size: 4.5rem;
     font-weight: 700;
   }
+
+  .mountain-img::before {
+    height: 70%;
+  }
 }
 
-
-.code-img::before {
-  content: "";
-  position: absolute;
-  height: 80%;
-  width: 80%;
-  top: -10px;
-  right: 0;
-  background-image: url('./assets/images/code-img.webp');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top right;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.mountain-img::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  background-image: url('./assets/images/mountain1.webp');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  pointer-events: none;
-  z-index: -10;
-}
-
-.mountain-img::before {
-  content: "";
-  position: absolute;
-  inset: 2em;
-  left: 2em;
-  height: 70%;
-  background-image: url('./assets/images/always-building.webp');
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: top left;
-  pointer-events: none;
-  z-index: -10;
-}
-
-footer.mountain-img ul:first-of-type::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-52%);
-  width: 380px;           
-  height: 60px;
-  background-image: url('./assets/images/line-icons.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.line::after {
-  content: "";
-  position: absolute;
-  top: 0.55em;
-  left: 0;                  /* Anclado abajo del todo */                   /* Lo sitúa al centro */
-  transform: translateX(-30%); /* Centrado horizontal matemático */
-  width: 150%;
-  height: 150%;                /* Ajusta la altura según el grosor que quieras */
-
-  background-image: url('./assets/images/line.webp');
-  background-size: contain;    /* Mantiene la proporción de la imagen sin deformarla */
-  background-repeat: no-repeat;
-  background-position: center bottom;
-
-  pointer-events: none;
-  z-index: 10;
+@media(width >= 80rem) {
+  form::after {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    bottom: 0;
+    transform: translateX(5%);
+    right: 0;
+    background-image: url('./assets/images/pc.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    pointer-events: none;
+    z-index: 0;
+  }
 }

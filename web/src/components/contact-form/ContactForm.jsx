@@ -28,7 +28,7 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onMessageSubmit)} className='my-12 lg:w-[50%]'>
+    <form onSubmit={handleSubmit(onMessageSubmit)} className='my-12 xl:w-[50%]'>
       <div className='mb-8'>
         {/*NAME*/}
         <div className='flex flex-col h-32 mb-4'>
