@@ -94,7 +94,7 @@ function AboutPage() {
             <p>Algoritmos, estructuras de datos, concurrencia, programación orientada a objetos, redes y administración de sistemas.</p>
           </li>
           <li className="grid grid-rows-[auto_auto_1fr] md:row-span-3 md:grid-rows-subgrid gap-y-3">
-            <img src={plant} alt="" aria-hidden="true" className="h-[90%] place-self-end mx-auto"/>
+            <img src={plant} alt="" aria-hidden="true"/>
             <h3>Autonomía y resiliencia (Metodología 42)</h3>
             <p>Más de 23 proyectos validados sin clases teóricas. He aprendido a investigar la documentación oficial, resolver bugs complejos de forma autónoma y colaborar en entornos de revisión por pares (peer-learning).</p>
           </li>
