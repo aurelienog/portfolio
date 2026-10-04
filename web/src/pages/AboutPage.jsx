@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import workingImg from '../assets/images/working.jpg';
+import me from '../assets/images/me_two.webp';
 import SplashIcon from "../components/splash-icon/SplashIcon";
 import greenSplash from '../assets/images/splashes/green-circle.webp';
 import blueSplash from '../assets/images/splashes/blue-circle.webp';
@@ -18,12 +18,11 @@ function AboutPage() {
   return (
       <main> 
       <h1>Sobre mí</h1>
-
-      <section className="mb-20 mx-auto max-w-4xl md:grid grid-cols-3 gap-8">
-        <figure className="my-20 mx-auto">
-          <img src={workingImg} alt="Desarrolladora trabajando frente al ordenador" className="w-full rounded-[var(--border-radius)]"/>
+      <section className="mb-20 mx-auto max-w-4xl lg:grid grid-cols-2 gap-12">
+        <figure className="mx-auto">
+          <img src={me} alt="Desarrolladora trabajando frente al ordenador"/>
         </figure>
-        <article className='space-y-6 col-span-2'>
+        <article className='space-y-6 pt-4'>
           <p className='highlight'>Construyo software, desde los fundamentos hasta la puesta en producción.</p>
           <p>Soy desarrolladora en <b className='highlight'>formación en 42</b>, enfocada en backend y resolución de problemas.</p>
           <p>Mi formación combina programación de bajo nivel y fundamentos de informática con desarrollo de software práctico. Trabajo con <b className='highlight'>C, Python, JavaScript y TypeScript</b>, y disfruto entendiendo cómo funcionan los sistemas por debajo de las abstracciones.</p>
