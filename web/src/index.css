@@ -54,7 +54,6 @@
     opacity: 1;
   }
 }
-
 }
 
 @layer base {
@@ -481,21 +480,6 @@
   }
 }
 
-.code-img::before {
-  content: "";
-  position: absolute;
-  height: 80%;
-  width: 80%;
-  top: -10px;
-  right: 0;
-  background-image: url('./assets/images/code-img.webp');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top right;
-  pointer-events: none;
-  z-index: 0;
-}
-
 .mountain-img::after {
   content: "";
   position: absolute;
@@ -539,23 +523,23 @@ footer.mountain-img ul:first-of-type::before {
   z-index: 10;
 }
 
-.line::after {
+/* .line::after {
   content: "";
   position: absolute;
   top: 0.55em;
-  left: 0;                  /* Anclado abajo del todo */                   /* Lo sitúa al centro */
-  transform: translateX(-30%); /* Centrado horizontal matemático */
+  left: 0;                  
+  transform: translateX(-30%); 
   width: 150%;
-  height: 150%;                /* Ajusta la altura según el grosor que quieras */
+  height: 150%;              
 
   background-image: url('./assets/images/line.webp');
-  background-size: contain;    /* Mantiene la proporción de la imagen sin deformarla */
+  background-size: contain;    
   background-repeat: no-repeat;
   background-position: center bottom;
 
   pointer-events: none;
   z-index: 10;
-}
+} */
 
 @media(min-width: 640px) {
     section {
@@ -666,8 +650,23 @@ footer.mountain-img ul:first-of-type::before {
     z-index: 0;
   }
 
+  
+.code-img::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: -10px;
+  right: 0;
+  background-image: url('./assets/images/code-img.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  pointer-events: none;
+  z-index: 0;
+}
 
-    form::before {
+    /* form::before {
     content: "";
     position: absolute;
     height: 40%;
@@ -681,7 +680,7 @@ footer.mountain-img ul:first-of-type::before {
     pointer-events: none;
     transform: rotate(-10deg);
     z-index: 0;
-  }
+  } */
 }
 
 @media(width >= 48rem) {
